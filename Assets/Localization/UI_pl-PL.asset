@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_pl-PL
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: pl-PL
+  m_SharedData: {fileID: 11400000, guid: d1f36ad8b8f624346bc40469a25094a6, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 5759769032457977963
+  m_TableData:
+  - m_Id: 39298813952
+    m_Localized: Graj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67622948864
+    m_Localized: Ustawienia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69560717312
+    m_Localized: "Wyjd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 460318855168
+    m_Localized: Cofnij
+    m_Metadata:
+      m_Items: []
+  - m_Id: 511917182976
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 821481984000
+    m_Localized: Grafika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 882278420480
+    m_Localized: "D\u017Awi\u0119k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953178935296
+    m_Localized: Rozgrywka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029813063680
+    m_Localized: Klawisze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1437474246656
+    m_Localized: "Zmie\u0144 Pe\u0142en Ekran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1544445775872
+    m_Localized: "Zmie\u0144  V-Sync"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1697433014272
+    m_Localized: "rozdzelczo\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1806963068928
+    m_Localized: "jako\u015B\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2040791322624
+    m_Localized: Muzyka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2329372020736
+    m_Localized: sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2413836914688
+    m_Localized: UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600441499648
+    m_Localized: "Czu\u0142o\u015B\u0107 myszy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2767785840640
+    m_Localized: "Odwr\xF3cenia osi Y"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408752754688
+    m_Localized: Pauza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4236299751424
+    m_Localized: "U\u017Cyj leku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4186832130048
+    m_Localized: "Wymie\u0144 Baterie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4094406447104
+    m_Localized: "Zwi\u0119ksz rozmiar latarki "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3924914622464
+    m_Localized: "W\u0142\u0105cz/wy\u0142\u0105cz latark\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3844455288832
+    m_Localized: Bieg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3673965219840
+    m_Localized: Powolny bieg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3587503837184
+    m_Localized: Interakcja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3458944225280
+    m_Localized: "Patrze\u0107"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3216907718656
+    m_Localized: Ruch w prawo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3215846559744
+    m_Localized: "Ruch do ty\u0142u"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3214479216640
+    m_Localized: Ruch w lewo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203880210432
+    m_Localized: Ruch do przodu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5713965633536
+    m_Localized: "J\u0119zyk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99557495296000
+    m_Localized: Polski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99588822552576
+    m_Localized: Angielski
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99889885499392
+    m_Localized: Niska
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99902946562048
+    m_Localized: "\u015Arednia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99915378479104
+    m_Localized: Wysoka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101428737888256
+    m_Localized: Podsumowanie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101602906361856
+    m_Localized: "G\u0142\xF3wne menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102257465249792
+    m_Localized: "wzn\xF3w"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816685613600768
+    m_Localized: "Uciek\u0142e\u015B!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1164853886865408
+    m_Localized: "Umar\u0142e\u015B!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1464816596439040
+    m_Localized: "Na Pewno chcesz wyj\u015B\u0107 z gry?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465338372050944
+    m_Localized: "Chcesz wr\xF3ci\u0107 do main menu?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465669713678336
+    m_Localized: Tak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465689250746368
+    m_Localized: Nie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1503449458167808
+    m_Localized: "Czy chcesz przej\u015B\u0107 tutorial?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1509831515328512
+    m_Localized: Tutaj masz obecne zadanie do wykonania.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1510189343985664
+    m_Localized: "Miernik twojego przere\u017Cenia, je\u017Celi si\u0119 ca\u0142y
+      wype\u0142ni to umrzesz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1510794456223744
+    m_Localized: "Ilo\u015B\u0107 posiadanych baterii oraz aktualny stan baterii."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1511034349441024
+    m_Localized: "Ilo\u015B\u0107 posiadanych lek\xF3w."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1511349433946112
+    m_Localized: "Tutaj regulujesz zasi\u0119gu i jasno\u015Bci latarki."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531363134296064
+    m_Localized: "aby podnie\u015B\u0107 lub po\u0142o\u017Cy\u0107 przedmioty."
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1531369123762176
+    m_Localized: "aby prze\u0142adowa\u0107 bateri\u0119."
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1531388484669440
+    m_Localized: "by u\u017Cy\u0107 lek\xF3w."
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1531402464284672
+    m_Localized: "aby w\u0142\u0105czy\u0107 lub wy\u0142\u0105czy\u0107 latark\u0119."
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1531436941463552
+    m_Localized: "aby wyregulowa\u0107 latark\u0119."
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1531452691075072
+    m_Localized: "aby i\u015B\u0107 powoli."
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1531466867822592
+    m_Localized: aby biec.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1623418753798144
+    m_Localized: Zmniejsz rozmiar latarki
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977963
+  - m_Id: 1865792104976384
+    m_Localized: "Naci\u015Bnij"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1865838267486208
+    m_Localized: Przytrzymaj
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1889267276337152
+    m_Localized: lub
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5759769032457977963
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 1531363134296064
+        - id: 1531369123762176
+        - id: 1531388484669440
+        - id: 1531402464284672
+        - id: 1531436941463552
+        - id: 1531452691075072
+        - id: 1531466867822592
+        - id: 1623418753798144

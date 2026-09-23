@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: d1f36ad8b8f624346bc40469a25094a6
+  m_Entries:
+  - m_Id: 39298813952
+    m_Key: Button Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67622948864
+    m_Key: 'Button Settings '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69560717312
+    m_Key: Button Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 460318855168
+    m_Key: Button Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 511917182976
+    m_Key: Button Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 821481984000
+    m_Key: Button Graphic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 882278420480
+    m_Key: 'Button Sounds '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953178935296
+    m_Key: 'Button Gameplay  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029813063680
+    m_Key: Button Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1437474246656
+    m_Key: Fullscreen Toggle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1544445775872
+    m_Key: V-Sync Toggle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1697433014272
+    m_Key: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1806963068928
+    m_Key: Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2040791322624
+    m_Key: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2329372020736
+    m_Key: SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2413836914688
+    m_Key: UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600441499648
+    m_Key: Mouse sensitivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2767785840640
+    m_Key: Invert Y Toggle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203880210432
+    m_Key: Move foward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3214479216640
+    m_Key: Move left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3215846559744
+    m_Key: Move back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3216907718656
+    m_Key: Move right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3458944225280
+    m_Key: Look
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3587503837184
+    m_Key: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3673965219840
+    m_Key: Slow Walk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3844455288832
+    m_Key: Sprint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3924914622464
+    m_Key: 'Toggle Flashlight '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4094406447104
+    m_Key: Flashlight Adjust Size Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4186832130048
+    m_Key: Reload Batery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4236299751424
+    m_Key: Use Medicine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408752754688
+    m_Key: esc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5713965633536
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99557495296000
+    m_Key: Polish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99588822552576
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99889885499392
+    m_Key: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99902946562048
+    m_Key: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99915378479104
+    m_Key: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101428737888256
+    m_Key: Result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101602906361856
+    m_Key: MainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102257465249792
+    m_Key: resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816685613600768
+    m_Key: youescape
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1164853886865408
+    m_Key: YouDie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1464816596439040
+    m_Key: doyouwantexit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465338372050944
+    m_Key: doyouwantreturn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465669713678336
+    m_Key: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465689250746368
+    m_Key: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1503449458167808
+    m_Key: WantShowTutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1509831515328512
+    m_Key: QuestTutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1510189343985664
+    m_Key: FearTutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1510794456223744
+    m_Key: BatteryTutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1511034349441024
+    m_Key: MedsTutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1511349433946112
+    m_Key: FlashlightTutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531363134296064
+    m_Key: Pickup Input Indicator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531369123762176
+    m_Key: Reload battery Input
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531388484669440
+    m_Key: Use Meds Input
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531402464284672
+    m_Key: On/Off flashlight Input
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531436941463552
+    m_Key: Scroll Input
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531452691075072
+    m_Key: Slow Walk Input
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531466867822592
+    m_Key: Sprint Input
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1623418753798144
+    m_Key: Flashlight Adjust Size Down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1865792104976384
+    m_Key: Press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1865838267486208
+    m_Key: Hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1889267276337152
+    m_Key: WordOr
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5759768918197797129
+  references:
+    version: 2
+    RefIds:
+    - rid: 5759768918197797129
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1789454884369

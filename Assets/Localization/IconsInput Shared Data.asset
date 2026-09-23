@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: IconsInput Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: IconsInput
+  m_TableCollectionNameGuidString: e3733969ab648644590de72cb52b68a8
+  m_Entries:
+  - m_Id: 3831779328
+    m_Key: WInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 65190252544
+    m_Key: AInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69069983744
+    m_Key: SInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74413527040
+    m_Key: DInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 675830583296
+    m_Key: LookInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 695594143744
+    m_Key: InteractInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 732730511360
+    m_Key: slowWalkInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 777655701504
+    m_Key: sprintInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 800850202624
+    m_Key: toggleflashlightInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 868508520448
+    m_Key: FlashlightAdjustSizeInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 886078459904
+    m_Key: 'relaodbatteryInput '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 919754526720
+    m_Key: useMedsInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 41261623169024
+    m_Key: escInput
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80889071816704
+    m_Key: FlashlightAdjustSizeInputDown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1012707891630080
+    m_Key: MiniGameInput
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5759769009867980989
+  references:
+    version: 2
+    RefIds:
+    - rid: 5759769009867980989
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1789822755411

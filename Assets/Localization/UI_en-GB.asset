@@ -1,0 +1,297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_en-GB
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-GB
+  m_SharedData: {fileID: 11400000, guid: d1f36ad8b8f624346bc40469a25094a6, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 5759769032457977962
+  m_TableData:
+  - m_Id: 39298813952
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67622948864
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69560717312
+    m_Localized: Exit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 460318855168
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 511917182976
+    m_Localized: Reset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 821481984000
+    m_Localized: Graphic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 882278420480
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 953178935296
+    m_Localized: Gameplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1029813063680
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1437474246656
+    m_Localized: Fullscreen Toggle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1544445775872
+    m_Localized: Toggle V-Sync
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1697433014272
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1806963068928
+    m_Localized: Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2040791322624
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2329372020736
+    m_Localized: sfx
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2413836914688
+    m_Localized: UI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2600441499648
+    m_Localized: Mouse sensitivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2767785840640
+    m_Localized: Invert Y Toggle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3203880210432
+    m_Localized: Move foward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3214479216640
+    m_Localized: Move left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3215846559744
+    m_Localized: Move back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3216907718656
+    m_Localized: Move right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3458944225280
+    m_Localized: Look
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3587503837184
+    m_Localized: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3673965219840
+    m_Localized: Slow Walk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3844455288832
+    m_Localized: Sprint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3924914622464
+    m_Localized: Toggle Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4094406447104
+    m_Localized: Adjust Size Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4186832130048
+    m_Localized: Reload Battery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4236299751424
+    m_Localized: Use Meds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408752754688
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5713965633536
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99557495296000
+    m_Localized: Polish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99588822552576
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99889885499392
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99902946562048
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99915378479104
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101428737888256
+    m_Localized: Result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101602906361856
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 102257465249792
+    m_Localized: resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816685613600768
+    m_Localized: You escaped!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1164853886865408
+    m_Localized: You Die!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1464816596439040
+    m_Localized: Are you sure you want to exit the game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465338372050944
+    m_Localized: You want to return to the main menu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465669713678336
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1465689250746368
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1503449458167808
+    m_Localized: Do you want to go through the tutorial?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1509831515328512
+    m_Localized: Here is the current task for you to complete.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1510189343985664
+    m_Localized: Your terror meter if it fills up completely, you will die.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1510794456223744
+    m_Localized: Number of batteries held and current battery status.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1511034349441024
+    m_Localized: Quantity of medicines held.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1511349433946112
+    m_Localized: Flashlight range and brightness adjustment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1531363134296064
+    m_Localized: to pickup or place objects.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1531369123762176
+    m_Localized: to reload battery.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1531388484669440
+    m_Localized: to use meds.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1531402464284672
+    m_Localized: to toggle flashlight.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1531436941463552
+    m_Localized: to adjust flashlight.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1531452691075072
+    m_Localized: to slow walk.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1531466867822592
+    m_Localized: to sprint.
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1623418753798144
+    m_Localized: Adjust Size Down
+    m_Metadata:
+      m_Items:
+      - rid: 5759769032457977962
+  - m_Id: 1865792104976384
+    m_Localized: Press
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1865838267486208
+    m_Localized: Hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1889267276337152
+    m_Localized: or
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 5759769032457977962
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 1531363134296064
+        - id: 1531369123762176
+        - id: 1531388484669440
+        - id: 1531402464284672
+        - id: 1531436941463552
+        - id: 1531452691075072
+        - id: 1531466867822592
+        - id: 1623418753798144

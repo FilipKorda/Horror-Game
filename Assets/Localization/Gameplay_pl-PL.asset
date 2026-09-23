@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Gameplay_pl-PL
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: pl-PL
+  m_SharedData: {fileID: 11400000, guid: 5341a9dbea27804469105c2dc8e7196b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3181662208
+    m_Localized: "Wampir polowa\u0142 na ciebie w jego mrocznych korytarzach, a\u017C
+      w ko\u0144cu uda\u0142o ci si\u0119 znale\u017A\u0107 spos\xF3b na pokonanie
+      go, pal\u0105c jego przedmioty.\n\nUciek\u0142e\u015B z p\u0142on\u0105cego
+      domu, nie ogl\u0105daj\u0105c si\u0119 za siebie. Bieg\u0142e\u015B tak d\u0142ugo,
+      a\u017C dom znikn\u0105\u0142 w ciemno\u015Bci\u2026 ale jego krzyk wci\u0105\u017C
+      s\u0142ysza\u0142e\u015B za plecami."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4066199752704
+    m_Localized: Ucieknij z domu!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4148689129472
+    m_Localized: "Znajd\u017A na tym pi\u0119trze:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4183908700160
+    m_Localized: Pas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4197527605248
+    m_Localized: Ubranie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4219476398080
+    m_Localized: Kaptur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4235255369728
+    m_Localized: Szalik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4254876323840
+    m_Localized: "Od\u0142\xF3\u017C je na piedesta\u0142."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5440190828544
+    m_Localized: "Wejd\u017A na pi\u0119tro wy\u017Cej."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5497833148416
+    m_Localized: Zapalniczka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5548689084416
+    m_Localized: Benzyna do zapalniczki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5589243809792
+    m_Localized: "Wr\xF3\u0107 do piedesta\u0142u i spal go."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1063623328026624
+    m_Localized: "Twoje serce nie wytrzyma\u0142o stresu przera\u017Cenia. Wampir
+      za cz\u0119sto ciebie \u0142apa\u0142 i dosta\u0142e\u015B zawa\u0142u.\n\nNie
+      zawsze po\u015Bpiech jest kluczem do osi\u0105gni\u0119cia celu. \n\"Gdy si\u0119
+      cz\u0142owiek spieszy, to diabe\u0142 si\u0119 cieszy!\""
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

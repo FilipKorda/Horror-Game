@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Gameplay_en-GB
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-GB
+  m_SharedData: {fileID: 11400000, guid: 5341a9dbea27804469105c2dc8e7196b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3181662208
+    m_Localized: 'The vampire hunted you through its dark corridors until you finally
+      found a way to defeat it by burning its belongings.
+
+
+
+      You fled the burning
+      house without looking back. You ran until the house vanished into the darkness...
+      yet you could still hear its scream behind you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4066199752704
+    m_Localized: Run away from home!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4148689129472
+    m_Localized: 'Find on this floor:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4183908700160
+    m_Localized: Belt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4197527605248
+    m_Localized: 'Clothes '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4219476398080
+    m_Localized: Hood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4235255369728
+    m_Localized: Scarf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4254876323840
+    m_Localized: Put them on a pedestal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5497833148416
+    m_Localized: Lighter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5548689084416
+    m_Localized: Lighter Fluid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5440190828544
+    m_Localized: Go up to the next floor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5589243809792
+    m_Localized: Return to the pedestal and burn it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1063623328026624
+    m_Localized: "Your heart couldn't withstand the stress of sheer terror. The vampire
+      caught you too often, and you suffered a heart attack.\r\n\r\nHaste isn't always
+      the key to achieving your goal. \n\"Haste makes the devil rejoice!\""
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
