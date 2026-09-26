@@ -1,4 +1,4 @@
-# 🩸 Haunted House — First Person Horror
+# 🩸 Haunted House - First Person Horror
 
 A first-person horror game set in a dark, abandoned house where you must complete your objectives and escape before a vampire finds you.
 
