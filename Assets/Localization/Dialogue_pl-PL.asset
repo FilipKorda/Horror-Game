@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogue_pl-PL
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: pl-PL
+  m_SharedData: {fileID: 11400000, guid: e74761f00bea1a749bfb145577f8b961, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 5073293312
+    m_Localized: W opuszczonym domu mieszka .......
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27177275392
+    m_Localized: "Od d\u0142u\u017Cszego czasu kto\u015B ci\u0119 \u015Bledzi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38275403776
+    m_Localized: "Czujesz, \u017Ce jeste\u015B obserwowany."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50216587264
+    m_Localized: "Nie mo\u017Cesz si\u0119 zatrzyma\u0107."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67941715968
+    m_Localized: "Musisz ucieka\u0107, zanim ......"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60182253568
+    m_Localized: "...... jest coraz bli\u017Cej i bli\u017Cej."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

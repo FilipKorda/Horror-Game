@@ -280,6 +280,10 @@ MonoBehaviour:
     m_Localized: lub
     m_Metadata:
       m_Items: []
+  - m_Id: 4401991113789440
+    m_Localized: "Naci\u015Bnij \u017Ceby pokaza\u0107 nast\u0119pne"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
