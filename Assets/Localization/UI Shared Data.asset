@@ -271,6 +271,10 @@ MonoBehaviour:
     m_Key: Clicktoshownext
     m_Metadata:
       m_Items: []
+  - m_Id: 5825627226607616
+    m_Key: HoldToSkip
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

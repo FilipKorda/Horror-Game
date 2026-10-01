@@ -284,6 +284,10 @@ MonoBehaviour:
     m_Localized: "Naci\u015Bnij \u017Ceby pokaza\u0107 nast\u0119pne"
     m_Metadata:
       m_Items: []
+  - m_Id: 5825627226607616
+    m_Localized: "Przytyrzymaj \u017Ceby pomin\u0105\u0107"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

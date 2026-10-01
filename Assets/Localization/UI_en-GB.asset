@@ -283,6 +283,10 @@ MonoBehaviour:
     m_Localized: Click to show next
     m_Metadata:
       m_Items: []
+  - m_Id: 5825627226607616
+    m_Localized: Hold to skip
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
