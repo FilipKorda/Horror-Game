@@ -158,6 +158,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Skip",
+                    "type": "Button",
+                    "id": "280846e9-63d5-41eb-a53b-9d5bd604b557",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -719,6 +728,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "TEST MINI GAME",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "00410a90-a48d-4064-b3ee-91bdd510b319",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f1ce07eb-764f-480b-a3b5-07b9feb000ec",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Skip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

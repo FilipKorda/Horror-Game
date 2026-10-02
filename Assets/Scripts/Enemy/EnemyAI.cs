@@ -12,14 +12,14 @@ public class EnemyAI : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Animator animator;
-    [SerializeField] private Transform eyes;   
+    [SerializeField] private Transform eyes;
     [SerializeField] private AudioClip heartbeatClip;
     [SerializeField] private AudioClip[] roarClips;
     [SerializeField] private AudioClip boomClip;
     [SerializeField] private AnimationCurve moveCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     [SerializeField] private float targetHeightOffsetAfterJump = -0.5f;
     private Transform approachingPoint;
-    private Transform player; 
+    private Transform player;
 
     [Header("Jumpscare Camera (złapanie bez ukrycia)")]
     [SerializeField] private float cameraTurnDuration = 0.2f;
@@ -27,26 +27,25 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float jumpscareZoomFOV = 35f;
     [SerializeField] private Transform targetAfterCatch;
     private Camera playerCamera;
-    private PlayerHider playerHider; 
+    private PlayerHider playerHider;
 
     [Header("Patrol (losowe punkty w promieniu)")]
     [SerializeField] private Transform patrolAreaCenter;
     [SerializeField] private float patrolRadius = 15f;
     [SerializeField] private float patrolSpeed = 2f;
-    [SerializeField] private float waitTimeAtPoint = 2f; 
+    [SerializeField] private float waitTimeAtPoint = 2f;
     [SerializeField] private float minWallClearance = 1f;
-    [SerializeField] private int maxPatrolPointAttempts = 10; 
+    [SerializeField] private int maxPatrolPointAttempts = 10;
 
     [Header("Chase")]
     [SerializeField] private float chaseSpeed = 5f;
-    [SerializeField] private float loseSightDelay = 3f; 
-    [SerializeField] private float repathThreshold = 0.5f; 
-    [SerializeField] private float stuckCheckInterval = 1f; 
-    [SerializeField] private float stuckDistanceThreshold = 0.2f; 
-    [SerializeField] private float catchDistance = 1f; 
-
+    [SerializeField] private float repathThreshold = 0.5f;
+    [SerializeField] private float stuckCheckInterval = 1f;
+    [SerializeField] private float stuckDistanceThreshold = 0.2f;
+    [SerializeField] private float catchDistance = 1f;
+    [SerializeField] private float searchRadius = 5f; 
     [Header("Despawn")]
-    [SerializeField] private float minNoInteractionDespawnTime = 20f; 
+    [SerializeField] private float minNoInteractionDespawnTime = 20f;
     [SerializeField] private float maxNoInteractionDespawnTime = 40f;
 
     [Header("Detection")]
@@ -59,7 +58,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float idleAnimValue = 0f;
     [SerializeField] private float walkAnimValue = 1f;
     [SerializeField] private float runAnimValue = 2f;
-    [SerializeField] private float animationDamping = 0.15f; 
+    [SerializeField] private float animationDamping = 0.15f;
 
     [Header("TEST START MINI GAME")]
     public InputActionReference testStartMiniGame;
@@ -70,7 +69,6 @@ public class EnemyAI : MonoBehaviour
 
     private float waitTimer;
     private bool isWaitingAtPoint;
-    private float lastSeenPlayerTime = -Mathf.Infinity;
     private Vector3 lastSeenPlayerPosition;
     private Vector3 lastChaseDestination;
 
@@ -131,7 +129,7 @@ public class EnemyAI : MonoBehaviour
         TESTEnterMiniGame();
     }
 
-  private void HandlePlayerHidden(HidingSpot hidingSpot)
+    private void HandlePlayerHidden(HidingSpot hidingSpot)
     {
         isPlayerHidden = true;
 
@@ -243,7 +241,6 @@ public class EnemyAI : MonoBehaviour
 
         if (canSeePlayer)
         {
-            lastSeenPlayerTime = Time.time;
             lastSeenPlayerPosition = player.position;
 
             if (Vector3.Distance(player.position, lastChaseDestination) > repathThreshold)
@@ -251,10 +248,21 @@ public class EnemyAI : MonoBehaviour
                 lastChaseDestination = player.position;
                 agent.SetDestination(player.position);
             }
+
+            return;
         }
-        else if (Time.time - lastSeenPlayerTime > loseSightDelay)
+
+        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
-            EnterPatrolState();
+            Vector2 randomOffset = Random.insideUnitCircle * searchRadius;
+            Vector3 searchPoint = lastSeenPlayerPosition + new Vector3(randomOffset.x, 0f, randomOffset.y);
+
+            if (NavMesh.SamplePosition(searchPoint, out NavMeshHit hit, searchRadius, navMeshAreaMask))
+            {
+                lastSeenPlayerPosition = hit.position; 
+                lastChaseDestination = hit.position;
+                agent.SetDestination(hit.position);
+            }
         }
     }
 
@@ -332,8 +340,7 @@ public class EnemyAI : MonoBehaviour
         agent.speed = chaseSpeed;
         agent.stoppingDistance = 1f;
         isWaitingAtPoint = false;
-        lastSeenPlayerTime = Time.time;
-        lastChaseDestination = Vector3.positiveInfinity; 
+        lastChaseDestination = Vector3.positiveInfinity; // wymusza SetDestination na pierwszej klatce pościgu
         AudioManager.Instance.StartMonsterRoar(roarClips);
 
         stuckTimer = 0f;
@@ -379,6 +386,7 @@ public class EnemyAI : MonoBehaviour
     {
         EnterMinigameState();
     }
+
     private void EnterMinigameState()
     {
         AudioManager.Instance.StartHeartbeat(heartbeatClip);
