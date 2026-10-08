@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 5081380331526373902}
   - component: {fileID: 8626182593731006805}
   - component: {fileID: 8186097369380858144}
+  - component: {fileID: 1066400809822663677}
   m_Layer: 0
   m_Name: Spot Light ground
   m_TagString: Untagged
@@ -170,7 +171,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
   m_Intensity: 6.65
   m_Range: 6
   m_SpotAngle: 136.45766
@@ -183,7 +184,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 4
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -254,6 +255,21 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1066400809822663677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724234251602874775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.594
+  scattering: 1.72
+  radius: 0.221
 --- !u!1001 &4836133828752778007
 PrefabInstance:
   m_ObjectHideFlags: 0
