@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: DieResultDescription
     m_Metadata:
       m_Items: []
+  - m_Id: 9353507409002496
+    m_Key: tutorialQuestDescription
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

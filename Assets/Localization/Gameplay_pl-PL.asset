@@ -78,6 +78,10 @@ MonoBehaviour:
       cz\u0142owiek spieszy, to diabe\u0142 si\u0119 cieszy!\""
     m_Metadata:
       m_Items: []
+  - m_Id: 9353507409002496
+    m_Localized: Opis Zadania
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

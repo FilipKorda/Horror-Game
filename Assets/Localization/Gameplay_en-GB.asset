@@ -79,6 +79,10 @@ MonoBehaviour:
       the key to achieving your goal. \n\"Haste makes the devil rejoice!\""
     m_Metadata:
       m_Items: []
+  - m_Id: 9353507409002496
+    m_Localized: Quest Description
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
