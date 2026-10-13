@@ -209,7 +209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1037050578626847036
 Transform:
   m_ObjectHideFlags: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
   flashlightModel: {fileID: 2833657811293920150}
   reloadPositionOffset: {x: 0.01, y: 0, z: -0.03}
   reloadRotationOffset: {x: 35, y: 0, z: -30}
-  reloadPoseCurve:
+  reloadMotionCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -419,7 +419,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.2
+      time: 0.22
       value: 1
       inSlope: 0
       outSlope: 0
@@ -428,8 +428,26 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.8
+      time: 0.48
       value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.6
+      value: -0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.72
+      value: 0.2
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -448,9 +466,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  reloadShakePosition: 0.004
-  reloadShakeAngle: 2.5
-  reloadShakeFrequency: 14
   lightSize: 0.5
   lightSizeStep: 0.25
   minRange: 6

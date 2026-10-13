@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -38,6 +39,8 @@ public class FlashlightLookController : MonoBehaviour
     private float flashlightPitch;
 
     private bool lookLocked;
+    private bool lookAtActive;
+    private Coroutine lookAtRoutine;
 
     private bool yawConstrained;
     private float yawConstraintCenter;
@@ -70,6 +73,8 @@ public class FlashlightLookController : MonoBehaviour
 
     private void OnDisable()
     {
+        lookAtActive = false;
+        lookAtRoutine = null;
         lookAction.action.Disable();
     }
 
@@ -114,9 +119,59 @@ public class FlashlightLookController : MonoBehaviour
         yawConstraintRange = range;
     }
 
+    public void LookAt(Vector3 worldPoint, float duration = 0.25f)
+    {
+        if (cameraTransform == null)
+            return;
+
+        if (lookAtRoutine != null)
+            StopCoroutine(lookAtRoutine);
+
+        lookAtRoutine = StartCoroutine(LookAtRoutine(worldPoint, duration));
+    }
+
+    private IEnumerator LookAtRoutine(Vector3 worldPoint, float duration)
+    {
+        Vector3 direction = worldPoint - cameraTransform.position;
+        float horizontalDistance = new Vector2(direction.x, direction.z).magnitude;
+
+        float targetYaw = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+        float targetPitch = Mathf.Clamp(-Mathf.Atan2(direction.y, horizontalDistance) * Mathf.Rad2Deg, minPitch, maxPitch);
+
+        if (yawConstrained)
+            targetYaw = ClampAngleAroundCenter(targetYaw, yawConstraintCenter, yawConstraintRange);
+
+        float startYaw = cameraYaw;
+        float startPitch = cameraPitch;
+
+        lookAtActive = true;
+
+        for (float elapsed = 0f; elapsed < duration; elapsed += Time.deltaTime)
+        {
+            float t = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+            SetViewAngles(Mathf.LerpAngle(startYaw, targetYaw, t), Mathf.Lerp(startPitch, targetPitch, t));
+            yield return null;
+        }
+
+        SetViewAngles(targetYaw, targetPitch);
+
+        lookAtActive = false;
+        lookAtRoutine = null;
+    }
+
+    // Kamera i latarka celuja w to samo, wiec po obrocie nie zostaje zaden lag latarki.
+    private void SetViewAngles(float yaw, float pitch)
+    {
+        cameraYaw = yaw;
+        cameraPitch = pitch;
+        flashlightYaw = yaw;
+        flashlightPitch = pitch;
+        ApplyRotations();
+    }
+
     private void Update()
     {
-        if (lookLocked)
+        if (lookLocked || lookAtActive)
             return;
 
         Vector2 look = lookAction.action.ReadValue<Vector2>();

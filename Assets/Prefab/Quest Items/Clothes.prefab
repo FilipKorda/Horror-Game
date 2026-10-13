@@ -2155,7 +2155,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1544878671178881975
 Transform:
@@ -2256,8 +2256,6 @@ MonoBehaviour:
   canHighlight: 1
   renderers:
   - {fileID: 6835243314786573762}
-  highlightColor: {r: 0.14017442, g: 0.64749664, b: 0.8490566, a: 0.80784315}
-  colorPropertyName: _BaseColor
 --- !u!1 &4239514593918518393
 GameObject:
   m_ObjectHideFlags: 0
