@@ -1,4 +1,3 @@
-
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -21,6 +20,13 @@ public class EnemyAI : MonoBehaviour
     private Transform approachingPoint;
     private Transform player;
 
+    [Header("Audio 3D (roar, boom)")]
+    [SerializeField] private AudioSource voiceSource;
+    [SerializeField] private float voiceMinDistance = 3f;
+    [SerializeField] private float voiceMaxDistance = 22f;
+    [SerializeField] private AudioRolloffMode voiceRolloffMode = AudioRolloffMode.Linear;
+    [SerializeField, Range(0f, 1f)] private float boomVolume = 1f;
+
     [Header("Jumpscare Camera (złapanie bez ukrycia)")]
     [SerializeField] private float cameraTurnDuration = 0.2f;
     [SerializeField] private float cameraZoomDuration = 0.2f;
@@ -28,10 +34,12 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Transform targetAfterCatch;
     private Camera playerCamera;
     private PlayerHider playerHider;
+    private InteractionSystem interactionSystem;
 
     [Header("Patrol (losowe punkty w promieniu)")]
     [SerializeField] private Transform patrolAreaCenter;
-    [SerializeField] private float patrolRadius = 15f;
+    [SerializeField] private float patrolRadius = 16f;
+    [SerializeField] private float minPatrolPointDistance = 11f;
     [SerializeField] private float patrolSpeed = 2f;
     [SerializeField] private float waitTimeAtPoint = 2f;
     [SerializeField] private float minWallClearance = 1f;
@@ -43,14 +51,14 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float stuckCheckInterval = 1f;
     [SerializeField] private float stuckDistanceThreshold = 0.2f;
     [SerializeField] private float catchDistance = 1f;
-    [SerializeField] private float searchRadius = 5f; 
+
     [Header("Despawn")]
     [SerializeField] private float minNoInteractionDespawnTime = 20f;
     [SerializeField] private float maxNoInteractionDespawnTime = 40f;
 
     [Header("Detection")]
-    [SerializeField] private float viewRadius = 10f;
-    [SerializeField, Range(0f, 360f)] private float viewAngle = 90f;
+    [SerializeField] private float viewRadius = 20f;
+    [SerializeField, Range(0f, 360f)] private float viewAngle = 150f;
     [SerializeField] private LayerMask obstacleLayerMask;
 
     [Header("Animation")]
@@ -58,18 +66,19 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float idleAnimValue = 0f;
     [SerializeField] private float walkAnimValue = 1f;
     [SerializeField] private float runAnimValue = 2f;
+    [SerializeField] private float lookBehindAnimValue = -1f;
     [SerializeField] private float animationDamping = 0.15f;
 
     [Header("TEST START MINI GAME")]
     public InputActionReference testStartMiniGame;
 
     private NavMeshAgent agent;
+    private NavMeshPath patrolPath;
     private State state;
     private Vector3 patrolCenter;
 
     private float waitTimer;
     private bool isWaitingAtPoint;
-    private Vector3 lastSeenPlayerPosition;
     private Vector3 lastChaseDestination;
 
     private float stuckTimer;
@@ -80,7 +89,13 @@ public class EnemyAI : MonoBehaviour
     private bool isPlayerHidden;
 
     public event System.Action<EnemyAI> OnDespawnRequested;
+    public static event System.Action OnChaseStarted;
+    public static event System.Action OnChaseEnded;
+    private bool isChaseActive;
     private int navMeshAreaMask;
+
+    private const int PlayerSamplePointCount = 3;
+    private readonly RaycastHit[] sightHits = new RaycastHit[16];
 
     public void SetNavMeshAreaMask(int mask)
     {
@@ -90,6 +105,7 @@ public class EnemyAI : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        patrolPath = new NavMeshPath();
 
         if (player == null)
         {
@@ -101,10 +117,22 @@ public class EnemyAI : MonoBehaviour
         if (playerHider == null && player != null)
             playerHider = player.GetComponent<PlayerHider>();
 
+        if (interactionSystem == null && player != null)
+            interactionSystem = player.GetComponentInChildren<InteractionSystem>();
+
         if (playerCamera == null)
             playerCamera = player.GetComponentInChildren<Camera>();
 
         patrolCenter = patrolAreaCenter != null ? patrolAreaCenter.position : transform.position;
+
+
+        if (voiceSource == null)
+            voiceSource = gameObject.AddComponent<AudioSource>();
+
+        voiceSource.playOnAwake = false;
+        voiceSource.rolloffMode = voiceRolloffMode;
+        voiceSource.minDistance = voiceMinDistance;
+        voiceSource.maxDistance = voiceMaxDistance;
     }
 
     private void OnEnable()
@@ -122,6 +150,24 @@ public class EnemyAI : MonoBehaviour
         PlayerHider.OnPlayerRevealed -= HandlePlayerRevealed;
 
         testStartMiniGame.action.performed -= TestStartMiniGame;
+    }
+
+    private void OnDestroy()
+    {
+        SetChaseActive(false);
+    }
+
+    private void SetChaseActive(bool active)
+    {
+        if (isChaseActive == active)
+            return;
+
+        isChaseActive = active;
+
+        if (active)
+            OnChaseStarted?.Invoke();
+        else
+            OnChaseEnded?.Invoke();
     }
 
     private void TestStartMiniGame(InputAction.CallbackContext ctx)
@@ -178,7 +224,7 @@ public class EnemyAI : MonoBehaviour
                 break;
 
             case State.Chasing:
-                UpdateChase(canSeePlayer);
+                UpdateChase();
                 break;
 
             case State.Redirecting:
@@ -209,7 +255,7 @@ public class EnemyAI : MonoBehaviour
 
         if (Time.time - lastPlayerInteractionTime > noInteractionDespawnTime)
         {
-            RequestDespawn(); 
+            RequestDespawn();
             return;
         }
 
@@ -224,6 +270,12 @@ public class EnemyAI : MonoBehaviour
             return;
         }
 
+        if (!agent.pathPending && agent.hasPath && agent.pathStatus != NavMeshPathStatus.PathComplete)
+        {
+            GoToRandomPatrolPoint();
+            return;
+        }
+
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
         {
             isWaitingAtPoint = true;
@@ -231,38 +283,21 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void UpdateChase(bool canSeePlayer)
+    private void UpdateChase()
     {
+        if (player == null)
+            return;
+
         if (agent.hasPath && !agent.pathPending && agent.pathStatus != NavMeshPathStatus.PathComplete)
         {
-            EnterRedirectState(); 
+            EnterRedirectState();
             return;
         }
 
-        if (canSeePlayer)
+        if (Vector3.Distance(player.position, lastChaseDestination) > repathThreshold)
         {
-            lastSeenPlayerPosition = player.position;
-
-            if (Vector3.Distance(player.position, lastChaseDestination) > repathThreshold)
-            {
-                lastChaseDestination = player.position;
-                agent.SetDestination(player.position);
-            }
-
-            return;
-        }
-
-        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
-        {
-            Vector2 randomOffset = Random.insideUnitCircle * searchRadius;
-            Vector3 searchPoint = lastSeenPlayerPosition + new Vector3(randomOffset.x, 0f, randomOffset.y);
-
-            if (NavMesh.SamplePosition(searchPoint, out NavMeshHit hit, searchRadius, navMeshAreaMask))
-            {
-                lastSeenPlayerPosition = hit.position; 
-                lastChaseDestination = hit.position;
-                agent.SetDestination(hit.position);
-            }
+            lastChaseDestination = player.position;
+            agent.SetDestination(player.position);
         }
     }
 
@@ -275,14 +310,14 @@ public class EnemyAI : MonoBehaviour
         }
 
         if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
-            RequestDespawn(); 
+            RequestDespawn();
     }
 
     private void UpdateApproaching()
     {
         if (agent.hasPath && !agent.pathPending && agent.pathStatus != NavMeshPathStatus.PathComplete)
         {
-            EnterRedirectState(); 
+            EnterRedirectState();
             return;
         }
 
@@ -305,13 +340,16 @@ public class EnemyAI : MonoBehaviour
 
     private void RequestDespawn()
     {
-        AudioManager.Instance.StopMonsterRoar();
+        AudioManager.Instance.StopMonsterRoar(voiceSource);
         OnDespawnRequested?.Invoke(this);
     }
 
     private void UpdateStuckDetection()
     {
-        if (state != State.Chasing && state != State.Redirecting && state != State.Approaching)
+        bool isMoving = state == State.Chasing || state == State.Redirecting || state == State.Approaching
+            || (state == State.Patrolling && !isWaitingAtPoint);
+
+        if (!isMoving)
         {
             stuckTimer = 0f;
             lastCheckedPosition = transform.position;
@@ -330,7 +368,12 @@ public class EnemyAI : MonoBehaviour
             && Vector3.Distance(transform.position, agent.destination) > agent.stoppingDistance + 0.5f;
 
         if (movedDistance < stuckDistanceThreshold && stillFarFromGoal)
-            EnterRedirectState();
+        {
+            if (state == State.Patrolling)
+                GoToRandomPatrolPoint();
+            else
+                EnterRedirectState();
+        }
     }
 
     private void EnterChaseState()
@@ -338,13 +381,16 @@ public class EnemyAI : MonoBehaviour
         state = State.Chasing;
         agent.isStopped = false;
         agent.speed = chaseSpeed;
-        agent.stoppingDistance = 1f;
+
+        agent.stoppingDistance = 0f;
         isWaitingAtPoint = false;
-        lastChaseDestination = Vector3.positiveInfinity; // wymusza SetDestination na pierwszej klatce pościgu
-        AudioManager.Instance.StartMonsterRoar(roarClips);
+        lastChaseDestination = Vector3.positiveInfinity;
+        AudioManager.Instance.StartMonsterRoar(voiceSource, roarClips);
 
         stuckTimer = 0f;
         lastCheckedPosition = transform.position;
+
+        SetChaseActive(true);
     }
 
     private void EnterPatrolState()
@@ -353,8 +399,11 @@ public class EnemyAI : MonoBehaviour
         agent.isStopped = false;
         agent.stoppingDistance = 1f;
         agent.speed = patrolSpeed;
+
+        lastPlayerInteractionTime = Time.time;
         GoToRandomPatrolPoint();
-        AudioManager.Instance.StopMonsterRoar();
+        AudioManager.Instance.StopMonsterRoar(voiceSource);
+        SetChaseActive(false);
     }
 
     private void EnterRedirectState()
@@ -364,11 +413,12 @@ public class EnemyAI : MonoBehaviour
         agent.speed = chaseSpeed;
         agent.stoppingDistance = 1f;
         isWaitingAtPoint = false;
+        SetChaseActive(false);
 
         if (TryGetRandomPatrolPoint(out Vector3 point))
             agent.SetDestination(point);
         else
-            EnterPatrolState(); 
+            EnterPatrolState();
     }
 
     private void EnterApproachingState()
@@ -386,11 +436,10 @@ public class EnemyAI : MonoBehaviour
     {
         EnterMinigameState();
     }
-
     private void EnterMinigameState()
     {
         AudioManager.Instance.StartHeartbeat(heartbeatClip);
-        AudioManager.Instance.StartMonsterRoar(roarClips);
+        AudioManager.Instance.StartMonsterRoar(voiceSource, roarClips);
 
         state = State.Minigame;
         agent.isStopped = true;
@@ -399,7 +448,7 @@ public class EnemyAI : MonoBehaviour
         if (ChaseMinigameController.Instance != null)
             ChaseMinigameController.Instance.StartMinigame(HandleMinigameWon, HandleMinigameLost);
         else
-            Debug.LogWarning("[EnemyAI] Brak ChaseMinigameController w scenie - nie mogę uruchomić minigry.", this);
+            Debug.LogError("[EnemyAI] Brak ChaseMinigameController w scenie - nie mogę uruchomić minigry.", this);
     }
 
     private void HandleMinigameWon()
@@ -417,11 +466,12 @@ public class EnemyAI : MonoBehaviour
         isPlayerHidden = false;
     }
 
-   private void EnterCaughtState()
+    private void EnterCaughtState()
     {
         state = State.Caught;
         agent.isStopped = true;
         agent.ResetPath();
+        SetChaseActive(false);
 
         if (isPlayerHidden)
         {
@@ -436,6 +486,9 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator JumpscareCaughtSequence()
     {
+        if (interactionSystem != null)
+            interactionSystem.CancelHiding();
+
         if (playerHider != null)
         {
             playerHider.SetMovementLocked(true);
@@ -452,14 +505,14 @@ public class EnemyAI : MonoBehaviour
 
         animator.SetTrigger("Attack");
 
-        yield return new WaitForSeconds(0.1f); 
+        yield return new WaitForSeconds(0.1f);
 
         if (JumpscareController.Instance != null)
             JumpscareController.Instance.Play();
         else
-            Debug.LogWarning("[EnemyAI] Brak JumpscareController w scenie - nie mogę odtworzyć jumpscare'a.", this);
+            Debug.LogError("[EnemyAI] Brak JumpscareController w scenie - nie mogę odtworzyć jumpscare'a.", this);
 
-        RequestDespawn(); 
+        RequestDespawn();
 
         if (playerCamera != null)
             playerCamera.fieldOfView = originalFOV;
@@ -526,7 +579,7 @@ public class EnemyAI : MonoBehaviour
         float elapsed = 0f;
         float moveDuration = 0.15f;
 
-        AudioManager.Instance.PlaySFX(boomClip);
+        AudioManager.Instance.PlaySFX3D(voiceSource, boomClip, boomVolume);
         animator.SetTrigger("Attack");
 
         while (elapsed < moveDuration)
@@ -555,15 +608,16 @@ public class EnemyAI : MonoBehaviour
         if (JumpscareController.Instance != null)
             JumpscareController.Instance.Play();
         else
-            Debug.LogWarning("[EnemyAI] Brak JumpscareController w scenie - nie mogę odtworzyć jumpscare'a.", this);
+            Debug.LogError("[EnemyAI] Brak JumpscareController w scenie - nie mogę odtworzyć jumpscare'a.", this);
 
-        RequestDespawn(); 
+        RequestDespawn();
     }
 
     private bool TryGetRandomPatrolPoint(out Vector3 point)
     {
-        bool foundAnyNavMeshPoint = false;
-        Vector3 fallbackPoint = Vector3.zero;
+        bool foundReachablePoint = false;
+        Vector3 bestPoint = Vector3.zero;
+        float bestClearance = -1f;
 
         for (int attempt = 0; attempt < maxPatrolPointAttempts; attempt++)
         {
@@ -573,24 +627,33 @@ public class EnemyAI : MonoBehaviour
             if (!NavMesh.SamplePosition(randomPoint, out NavMeshHit navHit, patrolRadius, navMeshAreaMask))
                 continue;
 
-            foundAnyNavMeshPoint = true;
-            fallbackPoint = navHit.position;
-
-            if (NavMesh.FindClosestEdge(navHit.position, out NavMeshHit edgeHit, navMeshAreaMask) && edgeHit.distance < minWallClearance)
+            if ((navHit.position - transform.position).sqrMagnitude < minPatrolPointDistance * minPatrolPointDistance)
                 continue;
 
-            point = navHit.position;
-            return true;
+            if (!NavMesh.CalculatePath(transform.position, navHit.position, navMeshAreaMask, patrolPath)
+                || patrolPath.status != NavMeshPathStatus.PathComplete)
+                continue;
+
+            float clearance = NavMesh.FindClosestEdge(navHit.position, out NavMeshHit edgeHit, navMeshAreaMask)
+                ? edgeHit.distance
+                : float.MaxValue;
+
+            if (clearance >= minWallClearance)
+            {
+                point = navHit.position;
+                return true;
+            }
+
+            if (clearance > bestClearance)
+            {
+                bestClearance = clearance;
+                bestPoint = navHit.position;
+                foundReachablePoint = true;
+            }
         }
 
-        if (foundAnyNavMeshPoint)
-        {
-            point = fallbackPoint; 
-            return true;
-        }
-
-        point = Vector3.zero;
-        return false;
+        point = bestPoint;
+        return foundReachablePoint;
     }
 
     private void GoToRandomPatrolPoint()
@@ -606,25 +669,80 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    private Vector3 GetPlayerTargetPoint()
+    {
+        return playerCamera != null ? playerCamera.transform.position : player.position + Vector3.up;
+    }
+
+    private Vector3 GetPlayerSamplePoint(int index)
+    {
+        Vector3 head = GetPlayerTargetPoint();
+
+        switch (index)
+        {
+            case 0: return head;
+            case 1: return Vector3.Lerp(player.position, head, 0.5f);
+            default: return player.position + Vector3.up * 0.3f;
+        }
+    }
+
     private bool CanSeePlayer()
     {
         if (player == null)
             return false;
 
-        Vector3 toPlayer = player.position - eyes.position;
-        float distance = toPlayer.magnitude;
+        Vector3 origin = eyes.position;
 
-        if (distance > viewRadius)
+        if (!IsInViewCone(origin, GetPlayerTargetPoint()))
             return false;
 
-        float angle = Vector3.Angle(transform.forward, toPlayer); 
-        if (angle > viewAngle / 2f)
+        for (int i = 0; i < PlayerSamplePointCount; i++)
+        {
+            if (!IsBlocked(origin, GetPlayerSamplePoint(i), out _))
+                return true;
+        }
+
+        return false;
+    }
+
+    private bool IsInViewCone(Vector3 origin, Vector3 target)
+    {
+        Vector3 toTarget = target - origin;
+
+        if (toTarget.sqrMagnitude > viewRadius * viewRadius)
             return false;
 
-        if (Physics.Linecast(eyes.position, player.position, obstacleLayerMask))
-            return false; 
+        Vector3 flatToTarget = Vector3.ProjectOnPlane(toTarget, Vector3.up);
+        Vector3 flatForward = Vector3.ProjectOnPlane(transform.forward, Vector3.up);
 
-        return true;
+        return flatToTarget.sqrMagnitude <= 0.0001f ||
+               Vector3.Angle(flatForward, flatToTarget) <= viewAngle * 0.5f;
+    }
+
+    private bool IsBlocked(Vector3 origin, Vector3 target, out RaycastHit blocker)
+    {
+        Vector3 toTarget = target - origin;
+        int hitCount = Physics.RaycastNonAlloc(origin, toTarget, sightHits, toTarget.magnitude,
+            obstacleLayerMask, QueryTriggerInteraction.Ignore);
+
+        bool blocked = false;
+        blocker = default;
+
+        for (int i = 0; i < hitCount; i++)
+        {
+            Transform hitTransform = sightHits[i].transform;
+
+            if (hitTransform.IsChildOf(transform) || hitTransform.IsChildOf(player))
+                continue;
+
+            if (!blocked || sightHits[i].distance < blocker.distance)
+            {
+                blocker = sightHits[i];
+                blocked = true;
+            }
+        }
+
+        return blocked;
     }
 
     public bool IsRunning => state == State.Chasing || state == State.Redirecting || state == State.Approaching;
@@ -641,7 +759,7 @@ public class EnemyAI : MonoBehaviour
         else if (state == State.Minigame || state == State.Caught)
             targetValue = idleAnimValue;
         else if (state == State.Patrolling && isWaitingAtPoint)
-            targetValue = idleAnimValue; 
+            targetValue = lookBehindAnimValue;
         else
             targetValue = walkAnimValue;
 
@@ -650,20 +768,59 @@ public class EnemyAI : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Vector3 origin = eyes != null ? eyes.position : transform.position;
-        Vector3 forward = transform.forward; 
+        Vector3 origin = eyes.position;
+        Vector3 forward = transform.forward;
         Vector3 center = patrolAreaCenter != null ? patrolAreaCenter.position : transform.position;
-
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(center, patrolRadius);
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(origin, viewRadius);
 
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(center, patrolRadius);
+
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position, minPatrolPointDistance);
+
+        Gizmos.color = Color.yellow;
         Quaternion leftRayRotation = Quaternion.AngleAxis(-viewAngle / 2f, Vector3.up);
         Quaternion rightRayRotation = Quaternion.AngleAxis(viewAngle / 2f, Vector3.up);
         Gizmos.DrawRay(origin, leftRayRotation * forward * viewRadius);
         Gizmos.DrawRay(origin, rightRayRotation * forward * viewRadius);
+
+        if (Application.isPlaying && player != null)
+            DrawSightGizmos(origin);
+    }
+
+    private void DrawSightGizmos(Vector3 origin)
+    {
+        if (!IsInViewCone(origin, GetPlayerTargetPoint()))
+        {
+            Gizmos.color = Color.gray;
+            Gizmos.DrawLine(origin, GetPlayerTargetPoint());
+            return;
+        }
+
+        for (int i = 0; i < PlayerSamplePointCount; i++)
+        {
+            Vector3 point = GetPlayerSamplePoint(i);
+
+            if (IsBlocked(origin, point, out RaycastHit blocker))
+            {
+                Gizmos.color = Color.gray;
+                Gizmos.DrawLine(origin, blocker.point);
+
+                Gizmos.color = new Color(1f, 0.5f, 0f);
+                Gizmos.DrawWireSphere(blocker.point, 0.1f);
+#if UNITY_EDITOR
+                UnityEditor.Handles.Label(blocker.point,
+                    $"{blocker.collider.name} [{LayerMask.LayerToName(blocker.collider.gameObject.layer)}]");
+#endif
+            }
+            else
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawLine(origin, point);
+            }
+        }
     }
 }
