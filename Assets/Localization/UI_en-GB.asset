@@ -287,6 +287,10 @@ MonoBehaviour:
     m_Localized: Hold to skip
     m_Metadata:
       m_Items: []
+  - m_Id: 9877505423212544
+    m_Localized: Hightlight Color
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

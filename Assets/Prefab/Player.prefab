@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2309838834318952568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: -0.000000007450581, y: 0.0000000029802323, z: 0.00453}
+  m_LocalPosition: {x: 0.00009, y: -0.00019, z: 0.00676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -140,9 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
-  anisotropy: 0.57
-  scattering: 1.48
-  radius: 0
+  anisotropy: 0.6
+  scattering: 1.3
+  radius: 0.213
 --- !u!1 &5138357121245313424
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,13 +470,10 @@ MonoBehaviour:
   pauseController: {fileID: 0}
   playerHider: {fileID: 2115170979798844300}
   dieResultPanel: {fileID: 0}
-  fearSlider: {fileID: 0}
-  sliderAnimationDuration: 0.35
   playerController: {fileID: 673638691628763923}
   characterController: {fileID: 174943437136670015}
   promptPanel: {fileID: 0}
   allUiObjects:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -609,6 +606,7 @@ MonoBehaviour:
   canvasRect: {fileID: 0}
   interactionSystem: {fileID: 2294795918840759755}
   crosshairImage: {fileID: 0}
+  inventory: {fileID: 2107256297289543023}
   uiCamera: {fileID: 0}
   projectionDistance: 10
   defaultSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
@@ -645,6 +643,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MedicineController
   medicineInventory: {fileID: 8744966283014305671}
+  openPotion: {fileID: 8300000, guid: 46799f9114b97ea46b96518bc186680f, type: 3}
+  medicineUse: {fileID: 8300000, guid: 98a541f27ef71c849ae392c7393f3b9c, type: 3}
   fearMeter: {fileID: 397285112041963625}
   useMedicineAction: {fileID: -7424547136501878821, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   useDuration: 2
@@ -927,7 +927,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -942,7 +942,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 200
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

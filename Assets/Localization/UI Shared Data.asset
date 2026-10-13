@@ -275,6 +275,10 @@ MonoBehaviour:
     m_Key: HoldToSkip
     m_Metadata:
       m_Items: []
+  - m_Id: 9877505423212544
+    m_Key: HightlightColor
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

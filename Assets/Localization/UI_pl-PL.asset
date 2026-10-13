@@ -288,6 +288,10 @@ MonoBehaviour:
     m_Localized: "Przytyrzymaj \u017Ceby pomin\u0105\u0107"
     m_Metadata:
       m_Items: []
+  - m_Id: 9877505423212544
+    m_Localized: "Kolor Pod\u015Bwietlenia"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
