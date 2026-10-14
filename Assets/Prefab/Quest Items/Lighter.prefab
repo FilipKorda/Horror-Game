@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c67d060cf76e3af4fbf4025ebdd30bb0, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c67d060cf76e3af4fbf4025ebdd30bb0, type: 3}
       propertyPath: m_Name
       value: Lighter
@@ -107,8 +111,6 @@ MonoBehaviour:
   canHighlight: 1
   renderers:
   - {fileID: 618402593920457142}
-  highlightColor: {r: 0.27189392, g: 0.6697695, b: 0.8867924, a: 0.7372549}
-  colorPropertyName: _BaseColor
 --- !u!65 &8284998357728602172
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c1fae343f80b5854d96b9537af525364, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c1fae343f80b5854d96b9537af525364, type: 3}
       propertyPath: m_Name
       value: LightetFluid
@@ -116,8 +120,6 @@ MonoBehaviour:
   canHighlight: 1
   renderers:
   - {fileID: 755058213527930149}
-  highlightColor: {r: 0.27058825, g: 0.67058825, b: 0.8862745, a: 0.7372549}
-  colorPropertyName: _BaseColor
 --- !u!114 &2527056169244928664
 MonoBehaviour:
   m_ObjectHideFlags: 0

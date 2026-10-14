@@ -291,6 +291,10 @@ MonoBehaviour:
     m_Localized: Hightlight Color
     m_Metadata:
       m_Items: []
+  - m_Id: 10368550808354816
+    m_Localized: Field of view
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

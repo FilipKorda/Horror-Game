@@ -82,6 +82,35 @@ MonoBehaviour:
     m_Localized: Opis Zadania
     m_Metadata:
       m_Items: []
+  - m_Id: 10578238166564864
+    m_Localized: "Przetrwa\u0142e\u015B t\u0119 noc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228160
+    m_Localized: Czas ucieczki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228161
+    m_Localized: "Razy z\u0142apany"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228162
+    m_Localized: "U\u017Cyte leki"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905400414208
+    m_Localized: "Wystraszy\u0142e\u015B si\u0119 na \u015Bmier\u0107. Twoje serce
+      nie wytrzyma\u0142o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905484300288
+    m_Localized: Czas przetrwania
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905484300289
+    m_Localized: Poziom strachu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -71,6 +71,34 @@ MonoBehaviour:
     m_Key: tutorialQuestDescription
     m_Metadata:
       m_Items: []
+  - m_Id: 10578238166564864
+    m_Key: EscapeTagline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228160
+    m_Key: StatEscapeTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228161
+    m_Key: StatTimesCaught
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228162
+    m_Key: StatMedicineUsed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905400414208
+    m_Key: DeathTagline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905484300288
+    m_Key: StatSurvivalTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905484300289
+    m_Key: StatFearLevel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

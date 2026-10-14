@@ -17,6 +17,7 @@ public class EscapeDoorInteraction : MonoBehaviour, IInteractable
         questManager.Escape();
 
         AudioManager.Instance.PlaySFX(doorCloseOpenClip);
+
         AudioManager.Instance.StopBreathing();
         AudioManager.Instance.StopHeartbeat();
 

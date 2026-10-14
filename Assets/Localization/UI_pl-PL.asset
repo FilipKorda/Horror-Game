@@ -292,6 +292,10 @@ MonoBehaviour:
     m_Localized: "Kolor Pod\u015Bwietlenia"
     m_Metadata:
       m_Items: []
+  - m_Id: 10368550808354816
+    m_Localized: Pole widzenia
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

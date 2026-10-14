@@ -1455,49 +1455,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3c46f86e29dd97c4a8a35deeb58fd07f, type: 3}
   - {fileID: 8300000, guid: 925f0b0b23dae93478ea81b22bb521ad, type: 3}
   boomClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  moveCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 5.0475802
-      outSlope: 5.0475802
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.09985561
-      value: 0.5040292
-      inSlope: 0.34495977
-      outSlope: 0.34495977
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.044902507
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.5509902
-      outSlope: 0.5509902
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  targetHeightOffsetAfterJump: -1.5
   voiceSource: {fileID: 7182202753642181780}
   voiceMinDistance: 1
   voiceMaxDistance: 17
   voiceRolloffMode: 2
   boomVolume: 0.9
-  cameraTurnDuration: 0.1
-  cameraZoomDuration: 0.15
-  jumpscareZoomFOV: 35
+  headBone: {fileID: 0}
   targetAfterCatch: {fileID: 1416283609105237085}
+  wardrobeSlamDuration: 0.08
   patrolAreaCenter: {fileID: 4962472389605161470}
   patrolRadius: 13
   minPatrolPointDistance: 8
@@ -1505,12 +1470,12 @@ MonoBehaviour:
   waitTimeAtPoint: 7
   minWallClearance: 2
   maxPatrolPointAttempts: 5
-  chaseSpeed: 4
+  chaseSpeed: 4.1
   repathThreshold: 0.4
   stuckCheckInterval: 1
   stuckDistanceThreshold: 0.3
   catchDistance: 1.5
-  minNoInteractionDespawnTime: 60
+  minNoInteractionDespawnTime: 45
   maxNoInteractionDespawnTime: 110
   viewRadius: 17
   viewAngle: 150

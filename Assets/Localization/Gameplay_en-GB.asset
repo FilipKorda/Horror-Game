@@ -83,6 +83,34 @@ MonoBehaviour:
     m_Localized: Quest Description
     m_Metadata:
       m_Items: []
+  - m_Id: 10578238166564864
+    m_Localized: You survived the night.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228160
+    m_Localized: Escape time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228161
+    m_Localized: Times caught
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10578238267228162
+    m_Localized: Medicine used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905400414208
+    m_Localized: You were scared to death. Your heart gave out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905484300288
+    m_Localized: Time survived
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10585905484300289
+    m_Localized: Fear level
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
