@@ -1730,7 +1730,7 @@ MonoBehaviour:
   volume: {fileID: 1495683407}
   startExposure: -10
   endExposure: 0
-  duration: 5
+  duration: 4
 --- !u!1 &149205982
 GameObject:
   m_ObjectHideFlags: 0

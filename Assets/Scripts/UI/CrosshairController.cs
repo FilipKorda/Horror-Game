@@ -10,6 +10,7 @@ public class CrosshairController : MonoBehaviour
     [SerializeField] private RectTransform canvasRect; 
     [SerializeField] private InteractionSystem interactionSystem;
     [SerializeField] private Image crosshairImage;
+    [SerializeField] private ItemInventory inventory;
 
     [Header("Canvas")]
     [SerializeField] private Camera uiCamera; 
@@ -74,7 +75,9 @@ public class CrosshairController : MonoBehaviour
             {
                 InteractionType.Pickup => pickupSprite,
                 InteractionType.Door => doorSprite,
-                InteractionType.Use => useSprite,
+                InteractionType.Use => (interactionSystem.CurrentInteractable is ItemSlot slot && !slot.CanPlace(inventory))
+                    ? defaultSprite
+                    : useSprite,
                 InteractionType.Hide => hideSprite,
                 InteractionType.Exit => exitSprite,
                 _ => defaultSprite,

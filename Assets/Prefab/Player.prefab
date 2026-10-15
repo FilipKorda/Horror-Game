@@ -210,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1037050578626847036
 Transform:
   m_ObjectHideFlags: 0
@@ -674,7 +674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MedicineController
   medicineInventory: {fileID: 8744966283014305671}
   openPotion: {fileID: 8300000, guid: 46799f9114b97ea46b96518bc186680f, type: 3}
-  medicineUse: {fileID: 8300000, guid: 98a541f27ef71c849ae392c7393f3b9c, type: 3}
+  medicineUse: {fileID: 8300000, guid: d6f9091520184b74c8d121388564412f, type: 3}
+  drinkAnimation: {fileID: 7511244211134137392}
   fearMeter: {fileID: 397285112041963625}
   useMedicineAction: {fileID: -7424547136501878821, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   useDuration: 2
@@ -979,6 +980,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2054735933162493601}
+  - {fileID: 6764184866297106638}
   m_Father: {fileID: 1037050578626847036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &813059357823627191
@@ -1014,7 +1016,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 200
-  field of view: 60.000004
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1177,4 +1179,153 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d7a686f8c177d2b4ca10006b9ecfe537, type: 3}
   m_PrefabInstance: {fileID: 2367087702699031677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6509266278258784037
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5222634992521822291}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7137922346051613787, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3519839527564271618, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -915287206595827515, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -915287206595827515, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      propertyPath: m_Name
+      value: Medicine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7511244211134137392}
+  m_SourcePrefab: {fileID: 100100000, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+--- !u!4 &1488226245174949536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3534566134582099579, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+  m_PrefabInstance: {fileID: 6509266278258784037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5192900787864987240 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7906793785910963891, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+  m_PrefabInstance: {fileID: 6509266278258784037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6238865236448119412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+  m_PrefabInstance: {fileID: 6509266278258784037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7511244211134137392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6238865236448119412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fcf787ef0d16140bd25e89e85a7399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MedicineDrinkAnimation
+  cap: {fileID: 5192900787864987240}
+  fluid: {fileID: 1488226245174949536}
+  hiddenNeckPosition: {x: 0.05, y: -0.3, z: 0.3}
+  shownNeckPosition: {x: 0.05, y: -0.03, z: 0.35}
+  mouthNeckPosition: {x: 0, y: -0.2, z: 0.3}
+  bottleYaw: 90
+  shownTilt: {x: -5, y: 0, z: 10}
+  mouthTilt: {x: -115, y: 0, z: 0}
+  gulpExtraTilt: -20
+  raiseDuration: 0.35
+  openPopTime: 0.1
+  capFlyDuration: 0.3
+  toMouthDuration: 0.4
+  mouthBeforeFirstGulp: 0.15
+  gulpTimes:
+  - 0.1
+  - 1.36
+  gulpDuration: 0.3
+  afterLastGulp: 0.1
+  lowerDuration: 0.35
+  capFlyOffset: {x: 15, y: 70, z: -10}
+  capFlySpin: {x: 0, y: 0, z: 240}
+  fluidLeft: 0.35
+  gulpBob: 0.006
+  gulpPulseTilt: -6
+--- !u!4 &6764184866297106638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1165488895b5ed3479cd65c4b71b4fa7, type: 3}
+  m_PrefabInstance: {fileID: 6509266278258784037}
   m_PrefabAsset: {fileID: 0}

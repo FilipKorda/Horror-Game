@@ -145,6 +145,13 @@ public abstract class ResultPanel : MonoBehaviour
         foreach (EnemyAI enemy in FindObjectsByType<EnemyAI>(FindObjectsSortMode.None))
             enemy.gameObject.SetActive(false);
 
+        foreach (FireEffect fire in FindObjectsByType<FireEffect>(FindObjectsSortMode.None))
+            fire.SilenceAudio();
+
+        InteractionSystem interaction = FindFirstObjectByType<InteractionSystem>();
+        if (interaction != null)
+            interaction.enabled = false;
+
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.StopMusic(musicFadeDuration);

@@ -38,6 +38,8 @@ public class FlashlightLookController : MonoBehaviour
     private float flashlightYaw;
     private float flashlightPitch;
 
+    private Camera playerCamera;
+
     private bool lookLocked;
     private bool lookAtActive;
     private Coroutine lookAtRoutine;
@@ -63,6 +65,7 @@ public class FlashlightLookController : MonoBehaviour
         {
             SetMouseSensitivity(SettingsManager.Instance.Gameplay.mouseSensitivity);
             SetInvertY(SettingsManager.Instance.Gameplay.invertY);
+            SetFieldOfView(SettingsManager.Instance.Gameplay.fieldOfView);
         }
     }
 
@@ -94,6 +97,15 @@ public class FlashlightLookController : MonoBehaviour
     }
 
     public void SetInvertY(bool invert) => invertY = invert;
+
+    public void SetFieldOfView(float fieldOfView)
+    {
+        if (playerCamera == null && cameraTransform != null)
+            playerCamera = cameraTransform.GetComponent<Camera>();
+
+        if (playerCamera != null)
+            playerCamera.fieldOfView = fieldOfView;
+    }
 
     private void SyncRotationState()
     {
@@ -176,10 +188,10 @@ public class FlashlightLookController : MonoBehaviour
 
         Vector2 look = lookAction.action.ReadValue<Vector2>();
 
-        bool isGamepad = InputDeviceDetector.Instance != null &&
-                         (InputDeviceDetector.Instance.CurrentDevice == InputDeviceType.Xbox ||
-                          InputDeviceDetector.Instance.CurrentDevice == InputDeviceType.PlayStation ||
-                          InputDeviceDetector.Instance.CurrentDevice == InputDeviceType.Generic);
+        InputControl activeControl = lookAction.action.activeControl;
+        bool isGamepad = activeControl != null
+            ? activeControl.device is Gamepad || activeControl.device is Joystick
+            : InputDeviceDetector.Instance != null && InputDeviceDetector.Instance.CurrentDevice != InputDeviceType.KeyboardMouse;
 
         float mouseX;
         float mouseY;

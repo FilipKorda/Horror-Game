@@ -11,6 +11,7 @@ public class DeathResultPanel : ResultPanel
     [SerializeField] private CanvasGroup heartMonitorGroup;
     [SerializeField] private float[] beatPositions = { 0.1f, 0.27f, 0.41f, 0.52f, 0.6f };
     [SerializeField] private AudioClip heartbeatClip;
+    [SerializeField] private AudioClip hospitalDeathClip;
     [SerializeField] private float heartbeatLead = 0.04f;
     [SerializeField] private AudioClip burstClip;
 
@@ -45,6 +46,9 @@ public class DeathResultPanel : ResultPanel
 
         if (heartbeatClip != null)
             heartbeatClip.LoadAudioData();
+
+        if (hospitalDeathClip != null)
+            hospitalDeathClip.LoadAudioData();
 
         if (brainImage != null && brainStages.Length > 0)
             brainImage.sprite = brainStages[0];
@@ -103,7 +107,7 @@ public class DeathResultPanel : ResultPanel
 
             yield return null;
         }
-
+ 
         yield return Wait(flatlineHold);
         yield return Tween(0.5f, t => SetGroup(heartMonitorGroup, 1f - t));
     }
@@ -120,6 +124,7 @@ public class DeathResultPanel : ResultPanel
         if (last)
         {
             PlayClip(burstClip);
+            PlayClip(hospitalDeathClip);
             shake = burstShake;
         }
     }

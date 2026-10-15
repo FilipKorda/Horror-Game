@@ -9,28 +9,32 @@ public class PauseController : MonoBehaviour
 
     [Header("Input Actions")]
     [SerializeField] private InputActionReference togglePauseAction;
+    [SerializeField] private InputActionReference lookAction;
 
     [SerializeField] private AudioClip pauseClip;
     [SerializeField] private AudioClip unpauseClip;
 
     public bool IsPaused { get; private set; }
-    public bool CanPause = false;
+    public bool CanPause { get; set; } = true;
 
-    private void Start()
-    {
-        CanPause = true;
-    }
 
     private void OnEnable()
     {
         togglePauseAction.action.Enable();
         togglePauseAction.action.performed += OnTogglePausePerformed;
+
+        if (lookAction == null)
+            Debug.LogError($"[{nameof(PauseController)}] Brak lookAction - kamera będzie się obracać w pauzie.", this);
+
     }
 
     private void OnDisable()
     {
         togglePauseAction.action.performed -= OnTogglePausePerformed;
         togglePauseAction.action.Disable();
+
+        if (IsPaused && lookAction != null)
+            lookAction.action.Enable();
     }
 
     private void OnTogglePausePerformed(InputAction.CallbackContext ctx)
@@ -70,6 +74,9 @@ public class PauseController : MonoBehaviour
             playerHider.SetLookLocked(true);
         }
 
+        if (lookAction != null)
+            lookAction.action.Disable();
+
         Time.timeScale = 0f;
 
         Cursor.lockState = CursorLockMode.None;
@@ -93,6 +100,9 @@ public class PauseController : MonoBehaviour
             playerHider.SetMovementLocked(false);
             playerHider.SetLookLocked(false);
         }
+
+        if (lookAction != null)
+            lookAction.action.Enable();
 
         Time.timeScale = 1f;
 
