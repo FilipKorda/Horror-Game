@@ -45,9 +45,9 @@ public class EnemySpawner : MonoBehaviour
             firstFloorMask = 1 << firstFloorAreaIndex;
     }
 
-    private void Start()
+    public void ActiveEnemySpawner(bool isActive)
     {
-        gameObject.SetActive(false);
+        gameObject.SetActive(isActive);
     }
 
     private void OnEnable()

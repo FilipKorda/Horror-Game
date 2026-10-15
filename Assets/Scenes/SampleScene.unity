@@ -1502,6 +1502,53 @@ Transform:
   - {fileID: 1274602308}
   m_Father: {fileID: 305150806}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7672457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7672458}
+  - component: {fileID: 7672459}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7672458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7672457}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.4928164, y: 1.197836, z: 14.836884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7672459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7672457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &8247005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2071,6 +2118,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8687471226945443086, guid: d5e72551e7027cd41837cbbec28c179d, type: 3}
   m_PrefabInstance: {fileID: 9991750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &10484562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10484563}
+  - component: {fileID: 10484564}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (24))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &10484563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10484562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5013216, y: 1.6556832, z: 22.3633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &10484564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10484562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &11109041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2875,6 +2969,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15555006}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &16703963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16703964}
+  - component: {fileID: 16703965}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &16703964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16703963}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.01911, y: 5.1895747, z: 26.89636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16703965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16703963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &17440379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6603,6 +6744,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43944492}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &44025300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44025301}
+  - component: {fileID: 44025302}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &44025301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44025300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.075011, y: 5.189575, z: 33.78099}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44025302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44025300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &44039859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7888,7 +8076,7 @@ MonoBehaviour:
   faceAimOffset: 0.1
   neckLookShare: 0.3
   turnDuration: 0.12
-  lungeDuration: 0.26
+  lungeDuration: 0.3
   lungeCurve:
     serializedVersion: 2
     m_Curve:
@@ -7923,7 +8111,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   cameraTrackSharpness: 28
-  impactHoldDuration: 0.9
+  impactHoldDuration: 1.6
   thrashPosition: 0.035
   thrashRotation: 4
   thrashFrequency: 18
@@ -15188,7 +15376,7 @@ MonoBehaviour:
   lookController: {fileID: 2112569052}
   turnDuration: 0.25
   revealClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  jumpscareClip: {fileID: 8300000, guid: a72d91a30d9e36748a68eb876598fac2, type: 3}
+  jumpscareClip: {fileID: 8300000, guid: b91db29665de47e4984a28200c70f69e, type: 3}
   flickerCount: 3
   flickerInterval: {x: 0.03, y: 0.1}
   revealDuration: 0.35
@@ -15587,6 +15775,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &99803534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99803535}
+  - component: {fileID: 99803536}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (2))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &99803535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99803534}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42289808, y: 0.9722969, z: 20.937958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &99803536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99803534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &100670400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18889,6 +19124,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.527035, y: 2.250134, z: 0.377189}
   m_Center: {x: 0.0002770573, y: 1.1250517, z: 0.0000053197145}
+--- !u!1 &118488027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118488028}
+  - component: {fileID: 118488029}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (7))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118488028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118488027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.580989, y: 0.9722969, z: 8.902889}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &118488029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118488027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &119320626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26137,6 +26419,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3724234251602874775, guid: d802eb377bcb66a40b509d4c21b4e96a, type: 3}
   m_PrefabInstance: {fileID: 170314957}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &170513325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170513326}
+  - component: {fileID: 170513327}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Barrel8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170513326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170513325}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.353765, y: 5.1245036, z: -3.609333}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170513327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170513325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &170641623
 GameObject:
   m_ObjectHideFlags: 0
@@ -28196,16 +28525,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 181515773}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 181515774}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &181515771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 181515770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &181515772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 181515770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &181515773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181515772}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: -0.00000023841858, y: 1.2168305, z: -0.02500926}
+--- !u!114 &181515774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181515772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1 &181659865
 GameObject:
   m_ObjectHideFlags: 0
@@ -31428,16 +31806,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 198696525}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 198696526}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &198696523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 198696522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &198696524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 198696522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &198696525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198696524}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008306}
+--- !u!114 &198696526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198696524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1 &199172509
 GameObject:
   m_ObjectHideFlags: 0
@@ -48978,6 +49405,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 562400741500638278, guid: 56f40e84fbdf40c48bf19014be31147c, type: 3}
   m_PrefabInstance: {fileID: 279430932}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &280274474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280274475}
+  - component: {fileID: 280274476}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280274475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280274474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22298858, y: 0.9722969, z: -0.17311075}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &280274476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280274474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &280495341
 GameObject:
   m_ObjectHideFlags: 0
@@ -50538,6 +51012,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a8c65a17966eeda4ebb1a4f253f8f8e4, type: 3}
   m_PrefabInstance: {fileID: 296123124}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &296801172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296801173}
+  - component: {fileID: 296801174}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Chest (4))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296801173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296801172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.699894, y: 0.95686096, z: 13.689145}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &296801174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296801172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &297169553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51991,6 +52512,53 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 51}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!1 &302208458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302208459}
+  - component: {fileID: 302208460}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302208459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302208458}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.77418, y: 5.4180727, z: -2.930884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &302208460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302208458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &303886534
 GameObject:
   m_ObjectHideFlags: 0
@@ -60258,7 +60826,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -63371,6 +63939,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.34, y: 2.250134, z: 0.377189}
   m_Center: {x: 0.0002770573, y: 1.1250517, z: 0.0000053197145}
+--- !u!1 &376151094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376151095}
+  - component: {fileID: 376151096}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (28))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &376151095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376151094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.22869, y: 1.6556832, z: 15.936999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &376151096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376151094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &377068701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68088,6 +68703,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401928736}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &403271547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403271548}
+  - component: {fileID: 403271549}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (21))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403271548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403271547}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.4279995, y: 1.6556832, z: 9.42969}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403271549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403271547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &404020344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82927,6 +83589,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471872924}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &472413643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472413644}
+  - component: {fileID: 472413645}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (2))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472413644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472413643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.339678, y: 5.937683, z: 33.5717}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &472413645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472413643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &474093207
 GameObject:
   m_ObjectHideFlags: 0
@@ -84216,7 +84925,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position 1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -84859,7 +85568,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -88004,6 +88713,53 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &501587589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501587590}
+  - component: {fileID: 501587591}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501587590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501587589}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.136102, y: 0.9722969, z: 7.0779552}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &501587591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501587589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &501708966
 GameObject:
   m_ObjectHideFlags: 0
@@ -90410,6 +91166,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520051941}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &520743940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 520743941}
+  - component: {fileID: 520743942}
+  m_Layer: 0
+  m_Name: Fire Point Large (Dresser)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520743941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520743940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.606277, y: 5.72985, z: 30.335897}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520743942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520743940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 2
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &521738660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91819,11 +92622,11 @@ MonoBehaviour:
   player: {fileID: 3227705777241362786}
   spawnAreaCenter: {fileID: 532199604}
   spawnAreaRadius: 30
-  minDistanceFromPlayer: 13
-  maxDistanceFromPlayer: 15
+  minDistanceFromPlayer: 15
+  maxDistanceFromPlayer: 18
   maxSpawnAttempts: 5
-  minSpawnDelay: 4
-  maxSpawnDelay: 7
+  minSpawnDelay: 30
+  maxSpawnDelay: 50
   groundFloorArea: GroundFloor
   firstFloorArea: FirstFloor
 --- !u!4 &532199604
@@ -92926,7 +93729,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest Lighter Item Spawn Position
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -96655,7 +97458,7 @@ MonoBehaviour:
   lookController: {fileID: 2112569052}
   turnDuration: 0.25
   revealClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  jumpscareClip: {fileID: 8300000, guid: a72d91a30d9e36748a68eb876598fac2, type: 3}
+  jumpscareClip: {fileID: 8300000, guid: b91db29665de47e4984a28200c70f69e, type: 3}
   flickerCount: 3
   flickerInterval: {x: 0.03, y: 0.1}
   revealDuration: 0.35
@@ -98852,6 +99655,7 @@ MonoBehaviour:
   - 0.52
   - 0.6
   heartbeatClip: {fileID: 8300000, guid: 3a7b366e8c064a240acf3cb6c52f4258, type: 3}
+  hospitalDeathClip: {fileID: 8300000, guid: 9621fca2db77fe6449bcd2ce51f431b6, type: 3}
   heartbeatLead: 0.04
   burstClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
   darkenDuration: 0.9
@@ -100631,6 +101435,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585049551}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &585133090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 585133091}
+  - component: {fileID: 585133092}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (4))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &585133091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585133090}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.7171838, y: 1.197836, z: 28.907885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &585133092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585133090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &586400323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104062,6 +104913,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 112359822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &607001543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607001544}
+  - component: {fileID: 607001545}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607001544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607001543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.2111838, y: 1.197836, z: 2.749116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &607001545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607001543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &607839847
 GameObject:
   m_ObjectHideFlags: 0
@@ -107666,6 +108564,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &634873108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634873109}
+  - component: {fileID: 634873110}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (4))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &634873109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634873108}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.510883, y: 5.4144096, z: 25.310183}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634873110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634873108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &635864465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110271,7 +111216,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position 1 (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -111910,16 +112855,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 663072737}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 663072738}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &663072735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 663072734}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &663072736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 663072734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &663072737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663072736}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0.00000047683716, y: 1.2168305, z: -0.025006399}
+--- !u!114 &663072738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663072736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1 &663213356
 GameObject:
   m_ObjectHideFlags: 0
@@ -115256,6 +116250,104 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &682694766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682694768}
+  - component: {fileID: 682694767}
+  m_Layer: 0
+  m_Name: House Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &682694767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682694766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6dd2b0095a1b049a04f664ef52054b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpread
+  smallFirePrefab: {fileID: 4551288118678890331, guid: 452573ef717de4646849be7189d9e0bb, type: 3}
+  mediumFirePrefab: {fileID: 9012839345668915281, guid: 8f773f165969c9949bfd5a9e249a9d84, type: 3}
+  largeFirePrefab: {fileID: 8406107954852270498, guid: e224a546a9d279e4ba52852b35e8a393, type: 3}
+  startDelay: 4
+  spreadSpeed: 0.35
+  randomDelay: 3
+  verticalDistanceWeight: 0.5
+  maxActiveLights: 4
+--- !u!4 &682694768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682694766}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 726589762}
+  - {fileID: 1035299230}
+  - {fileID: 520743941}
+  - {fileID: 1277736921}
+  - {fileID: 1534698121}
+  - {fileID: 1784219889}
+  - {fileID: 2025154810}
+  - {fileID: 1011179624}
+  - {fileID: 501587590}
+  - {fileID: 99803535}
+  - {fileID: 170513326}
+  - {fileID: 585133091}
+  - {fileID: 1926056022}
+  - {fileID: 1814851330}
+  - {fileID: 7672458}
+  - {fileID: 1149407210}
+  - {fileID: 634873109}
+  - {fileID: 1903405279}
+  - {fileID: 1820657351}
+  - {fileID: 1679860366}
+  - {fileID: 607001544}
+  - {fileID: 1395247169}
+  - {fileID: 302208459}
+  - {fileID: 2027361085}
+  - {fileID: 16703964}
+  - {fileID: 902726847}
+  - {fileID: 2076327820}
+  - {fileID: 118488028}
+  - {fileID: 280274475}
+  - {fileID: 1941421740}
+  - {fileID: 44025301}
+  - {fileID: 296801173}
+  - {fileID: 1620078098}
+  - {fileID: 1061798431}
+  - {fileID: 1098537183}
+  - {fileID: 1670535288}
+  - {fileID: 472413644}
+  - {fileID: 1555324721}
+  - {fileID: 1404976782}
+  - {fileID: 10484563}
+  - {fileID: 1664380161}
+  - {fileID: 703909413}
+  - {fileID: 403271548}
+  - {fileID: 953901671}
+  - {fileID: 376151095}
+  - {fileID: 1589505585}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &682711430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118427,6 +119519,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3893422237373081094, guid: 7dae88157418f064da65b73fca6f9824, type: 3}
   m_PrefabInstance: {fileID: 702135397}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &703909412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703909413}
+  - component: {fileID: 703909414}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (23))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &703909413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703909412}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.9300003, y: 1.6556832, z: -0.8113095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &703909414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703909412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &704900257
 GameObject:
   m_ObjectHideFlags: 0
@@ -121593,16 +122732,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 722155940}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 722155941}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &722155938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 722155937}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &722155939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 722155937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &722155940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722155939}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008306}
+--- !u!114 &722155941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722155939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1001 &722973581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122337,6 +123525,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 562400741500638278, guid: 56f40e84fbdf40c48bf19014be31147c, type: 3}
   m_PrefabInstance: {fileID: 726527294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &726589761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 726589762}
+  - component: {fileID: 726589763}
+  m_Layer: 0
+  m_Name: Fire Point Large (FurnitureDresser001a_substanceuv)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &726589762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726589761}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.012405, y: 5.550707, z: 9.215485}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &726589763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726589761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 2
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &726663278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125431,7 +126666,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -129698,7 +130933,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -133556,7 +134791,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position 2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -140142,7 +141377,7 @@ MonoBehaviour:
   lookController: {fileID: 2112569052}
   turnDuration: 0.25
   revealClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  jumpscareClip: {fileID: 8300000, guid: a72d91a30d9e36748a68eb876598fac2, type: 3}
+  jumpscareClip: {fileID: 8300000, guid: b91db29665de47e4984a28200c70f69e, type: 3}
   flickerCount: 3
   flickerInterval: {x: 0.03, y: 0.1}
   revealDuration: 0.35
@@ -148158,6 +149393,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &902726846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 902726847}
+  - component: {fileID: 902726848}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Barrel (3))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902726847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902726846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.280172, y: 5.6184425, z: 25.49628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &902726848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902726846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &902762863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154147,7 +155429,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -157012,6 +158294,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952373346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &953901670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953901671}
+  - component: {fileID: 953901672}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (33))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &953901671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953901670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29.04589, y: 1.6816832, z: 14.6151}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953901672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953901670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &954199786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166650,6 +167979,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010767735}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1011179623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011179624}
+  - component: {fileID: 1011179625}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (4))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1011179624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011179623}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.259898, y: 0.9722969, z: 17.272957}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1011179625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011179623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &1011396149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169836,6 +171212,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6199071214255693320, guid: 279210f3df6c6154685d7ee706045b24, type: 3}
   m_PrefabInstance: {fileID: 1632728038}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1035299229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035299230}
+  - component: {fileID: 1035299231}
+  m_Layer: 0
+  m_Name: Fire Point Large (Dresser (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1035299230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035299229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -39.0509, y: 5.72985, z: 23.387493}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1035299231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035299229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 2
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1036184976
 GameObject:
   m_ObjectHideFlags: 0
@@ -173390,6 +174813,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.34, y: 2.250134, z: 0.377189}
   m_Center: {x: 0.0002770573, y: 1.1250517, z: 0.0000053197145}
+--- !u!1 &1061798430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061798431}
+  - component: {fileID: 1061798432}
+  m_Layer: 0
+  m_Name: Fire Point Small (Chair4 (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061798431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061798430}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.821442, y: 4.8749456, z: 35.08968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061798432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061798430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1061798505
 GameObject:
   m_ObjectHideFlags: 0
@@ -174070,6 +175540,103 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064064220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1065289009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1065289011}
+  - component: {fileID: 1065289010}
+  m_Layer: 0
+  m_Name: Fire Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1065289010
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065289009}
+  m_Enabled: 0
+  serializedVersion: 12
+  m_Type: 2
+  m_Color: {r: 1, g: 0.52, b: 0.2, a: 1}
+  m_Intensity: 0
+  m_Range: 5
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &1065289011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065289009}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1643980548}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065552854
 GameObject:
   m_ObjectHideFlags: 0
@@ -179992,6 +181559,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1470653389952426127, guid: 6ac40807986cc1d4693507f3153bc998, type: 3}
   m_PrefabInstance: {fileID: 1097897602}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1098537182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1098537183}
+  - component: {fileID: 1098537184}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (4))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1098537183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098537182}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.638932, y: 5.8806834, z: -5.2377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1098537184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098537182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1099172093
 GameObject:
   m_ObjectHideFlags: 0
@@ -188763,6 +190377,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6411860152035922077, guid: 4e92401087e16184a82793be3bf90577, type: 3}
   m_PrefabInstance: {fileID: 1148191924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1149407209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1149407210}
+  - component: {fileID: 1149407211}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1149407210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149407209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.507114, y: 5.4144096, z: 21.119818}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1149407211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149407209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &1149443526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188815,16 +190476,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1149443529}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1149443530}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &1149443527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 1149443526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1149443528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 1149443526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1149443529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149443528}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008306}
+--- !u!114 &1149443530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149443528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1 &1149707304
 GameObject:
   m_ObjectHideFlags: 0
@@ -205774,7 +207484,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position 2 (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -211784,6 +213494,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.527035, y: 2.250134, z: 0.377189}
   m_Center: {x: 0.0002770573, y: 1.1250517, z: 0.0000053197145}
+--- !u!1 &1277736920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277736921}
+  - component: {fileID: 1277736922}
+  m_Layer: 0
+  m_Name: Fire Point Large (Dresser (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1277736921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277736920}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.9309, y: 1.500834, z: 15.306722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277736922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277736920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 2
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1278036515
 GameObject:
   m_ObjectHideFlags: 0
@@ -226313,7 +228070,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -230699,6 +232456,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6609429817953538473, guid: 97479120d8295e647b69fb73f3889cd5, type: 3}
   m_PrefabInstance: {fileID: 2869607499127622279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1395247168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395247169}
+  - component: {fileID: 1395247170}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (8))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1395247169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395247168}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.741184, y: 1.197836, z: 8.423117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395247170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395247168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &1395562248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232104,6 +233908,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1596405735871695719, guid: f2c75fedbc4d9074fafa42af6fb22508, type: 3}
   m_PrefabInstance: {fileID: 1404577572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1404976781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404976782}
+  - component: {fileID: 1404976783}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404976782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404976781}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.976679, y: 5.9736834, z: 1.2646998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1404976783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404976781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1405983648
 GameObject:
   m_ObjectHideFlags: 0
@@ -241999,7 +243850,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest LighterFuid Item Spawn Position 1 (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -242547,16 +244398,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1462729292}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1462729293}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &1462729290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 1462729289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1462729291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 1462729289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1462729292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462729291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008306}
+--- !u!114 &1462729293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462729291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1001 &1463998586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244101,7 +246001,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest Lighter Item Spawn Position (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -252808,6 +254708,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1534698120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534698121}
+  - component: {fileID: 1534698122}
+  m_Layer: 0
+  m_Name: Fire Point Large (Dresser)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1534698121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534698120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.1802788, y: 1.500834, z: 13.0101}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1534698122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534698120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 2
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1534699394
 GameObject:
   m_ObjectHideFlags: 0
@@ -255269,6 +257216,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1555324720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1555324721}
+  - component: {fileID: 1555324722}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (30))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1555324721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555324720}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.561322, y: 1.6556832, z: 22.2733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1555324722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555324720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1555454909
 GameObject:
   m_ObjectHideFlags: 0
@@ -260708,6 +262702,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4365426042368001554, guid: 5516fb9422a8fd64e90e98a914db01a8, type: 3}
   m_PrefabInstance: {fileID: 1589175968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1589505584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1589505585}
+  - component: {fileID: 1589505586}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (22))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1589505585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589505584}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.320001, y: 1.6556832, z: 11.64669}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589505586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589505584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1590137961
 GameObject:
   m_ObjectHideFlags: 0
@@ -265546,16 +267587,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1615346547}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1615346548}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &1615346545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 1615346544}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1615346546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 1615346544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1615346547
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615346546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: -0.0000019073486, y: 1.2168305, z: -0.025008306}
+--- !u!114 &1615346548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615346546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1 &1615612869
 GameObject:
   m_ObjectHideFlags: 0
@@ -266185,6 +268275,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1620078097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620078098}
+  - component: {fileID: 1620078099}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Chest (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1620078098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620078097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -31.286974, y: 5.1834292, z: 31.134172}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1620078099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620078097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1620421643
 GameObject:
   m_ObjectHideFlags: 0
@@ -270224,12 +272361,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6650292440862550807, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065289011}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4000667520668516784, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643980549}
+    - targetCorrespondingSourceObject: {fileID: 4000667520668516784, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643980550}
   m_SourcePrefab: {fileID: 100100000, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
---- !u!198 &1643980547 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6973788070346124452, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
+--- !u!1 &1643980547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4000667520668516784, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
   m_PrefabInstance: {fileID: 1643980546}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1643980548 stripped
@@ -270237,6 +272383,165 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6650292440862550807, guid: d0ec0a14054713c4cb454dc5f34fabb2, type: 3}
   m_PrefabInstance: {fileID: 1643980546}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1643980549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643980547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2a891fbb9bafe488820a3d6371c4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireEffect
+  growDuration: 1.2
+  startScale: 0.35
+  fireLight: {fileID: 1065289010}
+  lightIntensity: 2.5
+  flickerAmount: 0.35
+  flickerSpeed: 7
+  lightFadeSpeed: 2
+  audioSource: {fileID: 1643980550}
+  igniteSource: {fileID: 0}
+  loopClip: {fileID: 8300000, guid: cdff441ba93040f4ebe99e3bdb0ece65, type: 3}
+  igniteClip: {fileID: 0}
+  loopVolume: 0.85
+  igniteVolume: 0.8
+  pitchRange: {x: 0.92, y: 1.08}
+--- !u!82 &1643980550
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643980547}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: cdff441ba93040f4ebe99e3bdb0ece65, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 150
+  DopplerLevel: 0
+  MinDistance: 1
+  MaxDistance: 13
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -2.5
+      outSlope: -2.5
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.08
+      value: 0.8
+      inSlope: -2.5
+      outSlope: -2.5
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.22
+      value: 0.45
+      inSlope: -1.8586957
+      outSlope: -1.8586957
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.45
+      value: 0.17
+      inSlope: -0.83091784
+      outSlope: -0.83091784
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.72
+      value: 0.05
+      inSlope: -0.3115079
+      outSlope: -0.3115079
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.17857145
+      outSlope: -0.17857145
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.19444445
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1644199348
 GameObject:
   m_ObjectHideFlags: 0
@@ -272809,6 +275114,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8687471226945443086, guid: d5e72551e7027cd41837cbbec28c179d, type: 3}
   m_PrefabInstance: {fileID: 1661890354}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1664380160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664380161}
+  - component: {fileID: 1664380162}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (20))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1664380161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664380160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.181695, y: 1.6836832, z: 2.3410804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664380162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664380160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1664485934
 GameObject:
   m_ObjectHideFlags: 0
@@ -273716,6 +276068,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 562400741500638278, guid: 56f40e84fbdf40c48bf19014be31147c, type: 3}
   m_PrefabInstance: {fileID: 1669000407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1670535287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670535288}
+  - component: {fileID: 1670535289}
+  m_Layer: 0
+  m_Name: Fire Point Small (Shelf (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1670535288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670535287}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.299679, y: 5.9736834, z: 5.5627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1670535289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670535287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 0
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1670881284
 GameObject:
   m_ObjectHideFlags: 0
@@ -275279,6 +277678,53 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &1679860365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679860366}
+  - component: {fileID: 1679860367}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679860366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679860365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.236134, y: 5.4144087, z: 18.446709}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1679860367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679860365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &1679971922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -276558,7 +279004,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PedestalBurner
   lighter: {fileID: 11400000, guid: f4774cb54bf8a144286823f75da90ad9, type: 2}
   lighterFuel: {fileID: 11400000, guid: 20174a4a0982b494ba076709bb695707, type: 2}
-  fireParticles: {fileID: 1643980547}
+  fire: {fileID: 1643980549}
+  houseFire: {fileID: 682694767}
   questManager: {fileID: 1291782430}
 --- !u!65 &1687065913
 BoxCollider:
@@ -281770,16 +284217,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1725652978}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1725652979}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &1725652976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 1725652975}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1725652977 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 1725652975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1725652978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725652977}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008783}
+--- !u!114 &1725652979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725652977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1001 &1725746224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -287603,7 +290099,7 @@ GameObject:
   m_Layer: 0
   m_Name: Quest Lighter Item Spawn Position (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -291006,6 +293502,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1784219888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784219889}
+  - component: {fileID: 1784219890}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Log (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784219889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784219888}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.1671233, y: 0.662516, z: 20.517618}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784219890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784219888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1784465705
 GameObject:
   m_ObjectHideFlags: 0
@@ -294960,6 +297503,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3724234251602874775, guid: d802eb377bcb66a40b509d4c21b4e96a, type: 3}
   m_PrefabInstance: {fileID: 1814356257}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1814851329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1814851330}
+  - component: {fileID: 1814851331}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (3))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814851330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814851329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.0128164, y: 1.197836, z: 28.879885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1814851331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814851329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1815866444
 GameObject:
   m_ObjectHideFlags: 0
@@ -295745,6 +298335,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1820657350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820657351}
+  - component: {fileID: 1820657352}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (2))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1820657351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820657350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.818834, y: 5.4144087, z: 31.672314}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1820657352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820657350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1820955228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4638873827993991656, guid: 279210f3df6c6154685d7ee706045b24, type: 3}
@@ -308162,6 +310799,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1903405278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903405279}
+  - component: {fileID: 1903405280}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (5))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1903405279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903405278}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.675184, y: 1.197836, z: 33.740883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903405280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903405278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1904036757
 GameObject:
   m_ObjectHideFlags: 0
@@ -312107,6 +314791,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.34, y: 2.250134, z: 0.377189}
   m_Center: {x: 0.0002770573, y: 1.1250517, z: 0.0000053197145}
+--- !u!1 &1926056021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926056022}
+  - component: {fileID: 1926056023}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table (9))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1926056022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926056021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.849817, y: 1.197836, z: 22.783884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1926056023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926056021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1001 &1926595860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314261,7 +316992,7 @@ MonoBehaviour:
   lookController: {fileID: 2112569052}
   turnDuration: 0.25
   revealClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  jumpscareClip: {fileID: 8300000, guid: a72d91a30d9e36748a68eb876598fac2, type: 3}
+  jumpscareClip: {fileID: 8300000, guid: b91db29665de47e4984a28200c70f69e, type: 3}
   flickerCount: 3
   flickerInterval: {x: 0.03, y: 0.1}
   revealDuration: 0.35
@@ -315192,6 +317923,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941011622}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1941421739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941421740}
+  - component: {fileID: 1941421741}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (6))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1941421740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941421739}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.56981, y: 0.9722969, z: 7.34359}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1941421741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941421739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &1941818548
 GameObject:
   m_ObjectHideFlags: 0
@@ -329378,6 +332156,53 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &2025154809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025154810}
+  - component: {fileID: 2025154811}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (1))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2025154810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025154809}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.538086, y: 5.1895747, z: 5.2729316}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2025154811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025154809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &2025888603
 GameObject:
   m_ObjectHideFlags: 0
@@ -329573,6 +332398,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 562400741500638278, guid: 56f40e84fbdf40c48bf19014be31147c, type: 3}
   m_PrefabInstance: {fileID: 2026614592}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2027361084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2027361085}
+  - component: {fileID: 2027361086}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Barel4 (4))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2027361085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027361084}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -31.54225, y: 5.8157854, z: 12.976803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2027361086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027361084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &2028476357
 GameObject:
   m_ObjectHideFlags: 0
@@ -329979,7 +332851,7 @@ MonoBehaviour:
   lookController: {fileID: 2112569052}
   turnDuration: 0.25
   revealClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  jumpscareClip: {fileID: 8300000, guid: a72d91a30d9e36748a68eb876598fac2, type: 3}
+  jumpscareClip: {fileID: 8300000, guid: b91db29665de47e4984a28200c70f69e, type: 3}
   flickerCount: 3
   flickerInterval: {x: 0.03, y: 0.1}
   revealDuration: 0.35
@@ -331949,7 +334821,7 @@ MonoBehaviour:
   lookController: {fileID: 2112569052}
   turnDuration: 0.25
   revealClip: {fileID: 8300000, guid: e3863d057f52df04aae99b15f2985c0a, type: 3}
-  jumpscareClip: {fileID: 8300000, guid: a72d91a30d9e36748a68eb876598fac2, type: 3}
+  jumpscareClip: {fileID: 8300000, guid: b91db29665de47e4984a28200c70f69e, type: 3}
   flickerCount: 3
   flickerInterval: {x: 0.03, y: 0.1}
   revealDuration: 0.35
@@ -337850,6 +340722,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 562400741500638278, guid: 56f40e84fbdf40c48bf19014be31147c, type: 3}
   m_PrefabInstance: {fileID: 2074969024}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2076327819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076327820}
+  - component: {fileID: 2076327821}
+  m_Layer: 0
+  m_Name: Fire Point Medium (Table2 (8))
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076327820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076327819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.881012, y: 0.9722969, z: 18.89189}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 682694768}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076327821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076327819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50e613ffd2336a47ba0b7a30a691509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpreadPoint
+  size: 1
+  delayOverride: -1
+  scale: 1
 --- !u!1 &2076505929
 GameObject:
   m_ObjectHideFlags: 0
@@ -338591,16 +341510,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079583517}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079583518}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &2079583515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 2079583514}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2079583516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 2079583514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2079583517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079583516}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008306}
+--- !u!114 &2079583518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079583516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
 --- !u!1 &2081397094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1914560856365461032, guid: 51c6de61bc1063d4bbda6487e165f270, type: 3}
@@ -349774,16 +352742,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1862649049861935300}
+    - targetCorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1862649049861935299}
   m_SourcePrefab: {fileID: 100100000, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
 --- !u!4 &1862649049861935297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4726872793711156124, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
   m_PrefabInstance: {fileID: 1862649049861935296}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1862649049861935298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391628369503502630, guid: 66d3d3a2d3b6a2a4ea174f469e4c701d, type: 3}
+  m_PrefabInstance: {fileID: 1862649049861935296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1862649049861935299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862649049861935298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4e2982cc8ecb74ba9369cc18586476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FakeDoor
+  lockDoorClip: {fileID: 8300000, guid: 40cd9fa42c68613499a06b35b06e802a, type: 3}
+--- !u!65 &1862649049861935300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862649049861935298}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.200001, y: 2.433661, z: 0.16247961}
+  m_Center: {x: 0, y: 1.2168305, z: -0.025008306}
 --- !u!4 &1865366040381582760
 Transform:
   m_ObjectHideFlags: 0
@@ -356428,6 +359445,7 @@ SceneRoots:
   - {fileID: 54051309}
   - {fileID: 846697552}
   - {fileID: 1721586418}
+  - {fileID: 682694768}
   - {fileID: 1830332445}
   - {fileID: 272508425}
   - {fileID: 1909761462}

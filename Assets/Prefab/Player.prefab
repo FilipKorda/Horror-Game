@@ -200,10 +200,10 @@ GameObject:
   - component: {fileID: 8744966283014305671}
   - component: {fileID: 3169505370351793577}
   - component: {fileID: 7159786988869734316}
+  - component: {fileID: 5624607089965351112}
   - component: {fileID: 3917349967384431924}
   - component: {fileID: 6119966653276565025}
   - component: {fileID: 6522288661828770674}
-  - component: {fileID: 5624607089965351112}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -713,6 +713,48 @@ MonoBehaviour:
   walkVolume: 0.4
   sprintVolume: 0.7
   pitchRange: {x: 0.95, y: 1.05}
+--- !u!114 &5624607089965351112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566639883959206767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf7ea6b27c090245bed9170d61ca55a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDeathFall
+  cameraTransform: {fileID: 5222634992521822291}
+  handPoint: {fileID: 2054735933162493601}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  seizureDuration: 1.1
+  seizurePitch: 18
+  seizureTremor: 0.012
+  stumbleBack: 0.16
+  hunch: 0.12
+  buckleDuration: 0.42
+  kneelEyeHeight: 0.95
+  kneelPitch: 30
+  kneeDip: 0.05
+  wobbleDuration: 0.8
+  wobbleLean: 7
+  headRadius: 0.15
+  headRestHeight: 0.2
+  forwardBias: 0.3
+  toppleGravity: 16
+  impactBounce: 0.22
+  settleDuration: 0.9
+  restPitch: 6
+  handDropOffset: {x: 0.05, y: -0.4, z: -0.15}
+  handDropRotation: {x: 45, y: 0, z: 20}
+  shakePosition: 0.035
+  shakeRotation: 3.5
+  shakeDecay: 6
+  kneeImpactClip: {fileID: 8300000, guid: 1a06749df569d06428656b2e51df6c79, type: 3}
+  bodyImpactClip: {fileID: 8300000, guid: d1400730ca6f6a5469b8eb4b4d0deaa4, type: 3}
 --- !u!82 &3917349967384431924
 AudioSource:
   m_ObjectHideFlags: 0
@@ -904,48 +946,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!114 &5624607089965351112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566639883959206767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cf7ea6b27c090245bed9170d61ca55a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerDeathFall
-  cameraTransform: {fileID: 5222634992521822291}
-  handPoint: {fileID: 2054735933162493601}
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  seizureDuration: 1.1
-  seizurePitch: 18
-  seizureTremor: 0.012
-  stumbleBack: 0.16
-  hunch: 0.12
-  buckleDuration: 0.42
-  kneelEyeHeight: 0.95
-  kneelPitch: 30
-  kneeDip: 0.05
-  wobbleDuration: 0.8
-  wobbleLean: 7
-  headRadius: 0.15
-  headRestHeight: 0.2
-  forwardBias: 0.3
-  toppleGravity: 16
-  impactBounce: 0.22
-  settleDuration: 0.9
-  restPitch: 6
-  handDropOffset: {x: 0.05, y: -0.4, z: -0.15}
-  handDropRotation: {x: 45, y: 0, z: 20}
-  shakePosition: 0.035
-  shakeRotation: 3.5
-  shakeDecay: 6
-  kneeImpactClip: {fileID: 8300000, guid: 2044833b3eafc5d458f479b9b8967cd9, type: 3}
-  bodyImpactClip: {fileID: 8300000, guid: 0c704a47515b53041bd10b1fecbfb7a4, type: 3}
 --- !u!1 &7660666125510298289
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,10 +9,14 @@ public class EscapeDoorInteraction : MonoBehaviour, IInteractable
 
     public InteractionType Type => InteractionType.Exit;
 
+    private bool used;
+
     public bool Interact(GameObject interactor)
     {
-        if (questManager == null)
+        if (used || questManager == null)
             return false;
+
+        used = true;
 
         questManager.Escape();
 

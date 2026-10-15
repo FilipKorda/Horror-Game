@@ -15,8 +15,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private AudioClip heartbeatClip;
     [SerializeField] private AudioClip[] roarClips;
     [SerializeField] private AudioClip boomClip;
-    [SerializeField] private AnimationCurve moveCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
-    [SerializeField] private float targetHeightOffsetAfterJump = -0.5f;
     private Transform approachingPoint;
     private Transform player;
 
@@ -25,13 +23,12 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float voiceMinDistance = 3f;
     [SerializeField] private float voiceMaxDistance = 22f;
     [SerializeField] private AudioRolloffMode voiceRolloffMode = AudioRolloffMode.Linear;
-    [SerializeField, Range(0f, 1f)] private float boomVolume = 1f;
+    //[SerializeField, Range(0f, 1f)] private float boomVolume = 1f;
 
-    [Header("Jumpscare Camera (złapanie bez ukrycia)")]
-    [SerializeField] private float cameraTurnDuration = 0.2f;
-    [SerializeField] private float cameraZoomDuration = 0.2f;
-    [SerializeField] private float jumpscareZoomFOV = 35f;
+    [Header("Jumpscare (złapanie)")]
+    [SerializeField] private Transform headBone;
     [SerializeField] private Transform targetAfterCatch;
+    [SerializeField] private float wardrobeSlamDuration = 0.08f;
     private Camera playerCamera;
     private PlayerHider playerHider;
     private InteractionSystem interactionSystem;
@@ -51,6 +48,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float stuckCheckInterval = 1f;
     [SerializeField] private float stuckDistanceThreshold = 0.2f;
     [SerializeField] private float catchDistance = 1f;
+    [SerializeField] private float ignorePlayerAfterMinigameWin = 4f;
 
     [Header("Despawn")]
     [SerializeField] private float minNoInteractionDespawnTime = 20f;
@@ -87,6 +85,7 @@ public class EnemyAI : MonoBehaviour
     private float lastPlayerInteractionTime;
     private float noInteractionDespawnTime;
     private bool isPlayerHidden;
+    private float ignorePlayerUntil;
 
     public event System.Action<EnemyAI> OnDespawnRequested;
     public static event System.Action OnChaseStarted;
@@ -124,6 +123,12 @@ public class EnemyAI : MonoBehaviour
             playerCamera = player.GetComponentInChildren<Camera>();
 
         patrolCenter = patrolAreaCenter != null ? patrolAreaCenter.position : transform.position;
+
+        if (headBone == null)
+            headBone = FindChildRecursive(transform, "head");
+
+        if (headBone == null)
+            headBone = targetAfterCatch;
 
 
         if (voiceSource == null)
@@ -210,7 +215,7 @@ public class EnemyAI : MonoBehaviour
         if (canSeePlayer)
             lastPlayerInteractionTime = Time.time;
 
-        if ((state == State.Chasing || state == State.Approaching) && player != null
+        if ((state == State.Chasing || (state == State.Approaching && !isPlayerHidden)) && player != null
             && Vector3.Distance(transform.position, player.position) <= catchDistance)
         {
             EnterCaughtState();
@@ -453,7 +458,11 @@ public class EnemyAI : MonoBehaviour
 
     private void HandleMinigameWon()
     {
+        ignorePlayerUntil = Time.time + ignorePlayerAfterMinigameWin;
         EnterPatrolState();
+
+        if (isWaitingAtPoint)
+            RequestDespawn();
     }
 
     private void HandleMinigameLost()
@@ -468,149 +477,102 @@ public class EnemyAI : MonoBehaviour
 
     private void EnterCaughtState()
     {
+        if (state == State.Caught)
+            return;
+
         state = State.Caught;
         agent.isStopped = true;
         agent.ResetPath();
         SetChaseActive(false);
 
-        if (isPlayerHidden)
+        agent.enabled = false;
+
+        WardrobeController transitioningWardrobe = FindTransitioningWardrobe();
+        if (transitioningWardrobe != null)
         {
-            StartCoroutine(MoveEnemyToPlayer());
+            transitioningWardrobe.EjectPlayer();
+            isPlayerHidden = false;
         }
-        else
-        {
-            StartCoroutine(JumpscareCaughtSequence());
-        }
+
+        StartCoroutine(AttackPlayerRoutine(isPlayerHidden));
     }
 
-
-    private IEnumerator JumpscareCaughtSequence()
+    private IEnumerator AttackPlayerRoutine(bool playerHidden)
     {
-        if (interactionSystem != null)
+        WardrobeController wardrobe = playerHidden ? FindOccupiedWardrobe() : null;
+
+        if (!playerHidden && interactionSystem != null)
             interactionSystem.CancelHiding();
 
-        if (playerHider != null)
+        if (wardrobe != null)
         {
-            playerHider.SetMovementLocked(true);
-            playerHider.SetLookLocked(true);
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlaySFX(boomClip);
+
+            yield return wardrobe.SlamOpen(wardrobeSlamDuration);
         }
 
-        float originalFOV = playerCamera != null ? playerCamera.fieldOfView : 0f;
-
-        if (playerCamera != null)
+        if (JumpscareController.Instance == null)
         {
-            yield return RotateCameraTowardsEnemy();
-            yield return ZoomCamera();
-        }
-
-        animator.SetTrigger("Attack");
-
-        yield return new WaitForSeconds(0.1f);
-
-        if (JumpscareController.Instance != null)
-            JumpscareController.Instance.Play();
-        else
             Debug.LogError("[EnemyAI] Brak JumpscareController w scenie - nie mogę odtworzyć jumpscare'a.", this);
 
-        RequestDespawn();
+            if (wardrobe != null)
+                wardrobe.ReturnToAjar();
 
-        if (playerCamera != null)
-            playerCamera.fieldOfView = originalFOV;
-
-        if (playerHider != null)
-        {
-            playerHider.SetMovementLocked(false);
-            playerHider.SetLookLocked(false);
-        }
-    }
-
-    private IEnumerator RotateCameraTowardsEnemy()
-    {
-        Vector3 lookTarget = targetAfterCatch != null ? targetAfterCatch.position : transform.position;
-        Vector3 direction = lookTarget - playerCamera.transform.position;
-
-        if (direction.sqrMagnitude < 0.0001f)
+            RequestDespawn();
             yield break;
-
-        Vector3 targetEuler = Quaternion.LookRotation(direction).eulerAngles;
-        Quaternion targetRotation = Quaternion.Euler(targetEuler.x, targetEuler.y, 0f);
-        Quaternion startRotation = playerCamera.transform.rotation;
-
-        float elapsed = 0f;
-        while (elapsed < cameraTurnDuration)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / cameraTurnDuration;
-            playerCamera.transform.rotation = Quaternion.Slerp(startRotation, targetRotation, t);
-            yield return null;
         }
 
-        playerCamera.transform.rotation = targetRotation;
+        JumpscareController.Instance.PlayAttack(
+            transform,
+            animator,
+            headBone,
+            () =>
+            {
+                if (wardrobe != null)
+                    wardrobe.ReturnToAjar();
+
+                RequestDespawn();
+            },
+            playerHidden,
+            wardrobe != null ? null : boomClip);
     }
 
-    private IEnumerator ZoomCamera()
+    private static Transform FindChildRecursive(Transform parent, string childName)
     {
-        float startFOV = playerCamera.fieldOfView;
-        float elapsed = 0f;
-
-        while (elapsed < cameraZoomDuration)
+        foreach (Transform child in parent)
         {
-            elapsed += Time.deltaTime;
-            float t = elapsed / cameraZoomDuration;
-            playerCamera.fieldOfView = Mathf.Lerp(startFOV, jumpscareZoomFOV, t);
-            yield return null;
+            if (child.name == childName)
+                return child;
+
+            Transform found = FindChildRecursive(child, childName);
+            if (found != null)
+                return found;
         }
 
-        playerCamera.fieldOfView = jumpscareZoomFOV;
+        return null;
     }
 
-    private IEnumerator MoveEnemyToPlayer()
+    private static WardrobeController FindTransitioningWardrobe()
     {
-        Vector3 startPosition = transform.position;
-        Quaternion startRotation = transform.rotation;
-
-        Vector3 targetPosition = player.transform.position;
-
-        targetPosition.y += targetHeightOffsetAfterJump;
-
-        Vector3 direction = targetPosition - startPosition;
-        Quaternion targetRotation = Quaternion.LookRotation(direction);
-
-        float elapsed = 0f;
-        float moveDuration = 0.15f;
-
-        AudioManager.Instance.PlaySFX3D(voiceSource, boomClip, boomVolume);
-        animator.SetTrigger("Attack");
-
-        while (elapsed < moveDuration)
+        foreach (WardrobeController wardrobe in FindObjectsByType<WardrobeController>(FindObjectsSortMode.None))
         {
-            elapsed += Time.deltaTime;
-
-            float t = moveCurve.Evaluate(elapsed / moveDuration);
-
-            transform.position = Vector3.Lerp(
-                startPosition,
-                targetPosition,
-                t
-            );
-
-            transform.rotation = Quaternion.Slerp(
-                startRotation,
-                targetRotation,
-                t
-            );
-
-            yield return null;
+            if (wardrobe.IsTransitioningWithPlayer)
+                return wardrobe;
         }
 
-        transform.SetPositionAndRotation(targetPosition, targetRotation);
+        return null;
+    }
 
-        if (JumpscareController.Instance != null)
-            JumpscareController.Instance.Play();
-        else
-            Debug.LogError("[EnemyAI] Brak JumpscareController w scenie - nie mogę odtworzyć jumpscare'a.", this);
+    private static WardrobeController FindOccupiedWardrobe()
+    {
+        foreach (WardrobeController wardrobe in FindObjectsByType<WardrobeController>(FindObjectsSortMode.None))
+        {
+            if (wardrobe.IsOccupied)
+                return wardrobe;
+        }
 
-        RequestDespawn();
+        return null;
     }
 
     private bool TryGetRandomPatrolPoint(out Vector3 point)
@@ -688,7 +650,7 @@ public class EnemyAI : MonoBehaviour
 
     private bool CanSeePlayer()
     {
-        if (player == null)
+        if (player == null || isPlayerHidden || Time.time < ignorePlayerUntil)
             return false;
 
         Vector3 origin = eyes.position;
