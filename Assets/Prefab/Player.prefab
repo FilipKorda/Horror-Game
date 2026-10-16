@@ -313,10 +313,10 @@ GameObject:
   - component: {fileID: 3169505370351793577}
   - component: {fileID: 7159786988869734316}
   - component: {fileID: 5624607089965351112}
+  - component: {fileID: 3337201416935205842}
   - component: {fileID: 3917349967384431924}
   - component: {fileID: 6119966653276565025}
   - component: {fileID: 6522288661828770674}
-  - component: {fileID: 3337201416935205842}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -869,6 +869,45 @@ MonoBehaviour:
   shakeDecay: 6
   kneeImpactClip: {fileID: 8300000, guid: 1a06749df569d06428656b2e51df6c79, type: 3}
   bodyImpactClip: {fileID: 8300000, guid: d1400730ca6f6a5469b8eb4b4d0deaa4, type: 3}
+--- !u!114 &3337201416935205842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566639883959206767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71530671c8f1cbe4195fa7ba942065e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraHeadBob
+  cameraTransform: {fileID: 5222634992521822291}
+  fpsController: {fileID: 673638691628763923}
+  characterController: {fileID: 174943437136670015}
+  footsteps: {fileID: 7159786988869734316}
+  slowWalk:
+    stepLength: 0.75
+    bounce: 0.005
+    sway: 0.009
+    roll: 0.4
+    nod: 0.12
+  walk:
+    stepLength: 1.6
+    bounce: 0.011
+    sway: 0.007
+    roll: 0.3
+    nod: 0.2
+  sprint:
+    stepLength: 1.6
+    bounce: 0.02
+    sway: 0.011
+    roll: 0.45
+    nod: 0.4
+  speedSmoothing: 10
+  fadeSpeed: 6
+  airborneGrace: 0.2
+  footstepSync: 2
+  maxSyncCorrection: 0.2
 --- !u!82 &3917349967384431924
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1060,45 +1099,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!114 &3337201416935205842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566639883959206767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71530671c8f1cbe4195fa7ba942065e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CameraHeadBob
-  cameraTransform: {fileID: 5222634992521822291}
-  fpsController: {fileID: 673638691628763923}
-  characterController: {fileID: 174943437136670015}
-  footsteps: {fileID: 7159786988869734316}
-  slowWalk:
-    stepLength: 0.75
-    bounce: 0.005
-    sway: 0.009
-    roll: 0.4
-    nod: 0.12
-  walk:
-    stepLength: 1.6
-    bounce: 0.011
-    sway: 0.007
-    roll: 0.3
-    nod: 0.2
-  sprint:
-    stepLength: 1.6
-    bounce: 0.02
-    sway: 0.011
-    roll: 0.45
-    nod: 0.4
-  speedSmoothing: 10
-  fadeSpeed: 6
-  airborneGrace: 0.2
-  footstepSync: 2
-  maxSyncCorrection: 0.2
 --- !u!1 &7660666125510298289
 GameObject:
   m_ObjectHideFlags: 0

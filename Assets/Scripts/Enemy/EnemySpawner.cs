@@ -23,6 +23,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private string groundFloorArea = "GroundFloor";
     [SerializeField] private string firstFloorArea = "FirstFloor";
 
+    [Header("Efekt pojawienia i znikania")]
+    [SerializeField] private GameObject appearEffectPrefab;
+
     private int groundFloorMask;
     private int firstFloorMask;
     private int currentPlayerFloor;
@@ -92,6 +95,8 @@ public class EnemySpawner : MonoBehaviour
 
         enemy.OnDespawnRequested += HandleEnemyDespawnRequested;
         activeEnemy = enemy;
+
+        PlayAppearEffect(point);
     }
 
     private void HandleEnemyDespawnRequested(EnemyAI enemy)
@@ -100,7 +105,26 @@ public class EnemySpawner : MonoBehaviour
 
         activeEnemy = null;
 
+        PlayAppearEffect(enemy.transform.position);
         Destroy(enemy.gameObject);
+    }
+
+    private void PlayAppearEffect(Vector3 position)
+    {
+        if (appearEffectPrefab == null)
+            return;
+
+        GameObject effect = Instantiate(appearEffectPrefab, position, Quaternion.identity);
+        float lifetime = 0f;
+
+        foreach (ParticleSystem system in effect.GetComponentsInChildren<ParticleSystem>())
+        {
+            ParticleSystem.MainModule main = system.main;
+            lifetime = Mathf.Max(lifetime, main.startDelay.constantMax + main.duration + main.startLifetime.constantMax);
+            system.Play(false);
+        }
+
+        Destroy(effect, lifetime + 0.5f);
     }
 
     private bool TryGetSpawnPoint(out Vector3 point, out int areaMask)
@@ -117,8 +141,6 @@ public class EnemySpawner : MonoBehaviour
 
         for (int attempt = 0; attempt < maxSpawnAttempts; attempt++)
         {
-            // Punkt losowany w pierścieniu wokół gracza, a nie w całej strefie spawnu - dzięki temu
-            // wróg zawsze pojawia się w zakresie min-max, zamiast odrzucać większość losowań.
             Vector2 direction = Random.insideUnitCircle.normalized;
             float distance = Random.Range(minDistanceFromPlayer, maxDistanceFromPlayer);
 
@@ -127,7 +149,6 @@ public class EnemySpawner : MonoBehaviour
             if (!NavMesh.SamplePosition(candidate, out NavMeshHit hit, 5f, areaMask))
                 continue;
 
-            // SamplePosition może przesunąć punkt, więc zakres sprawdzamy jeszcze raz na wyniku.
             float distanceToPlayer = Vector3.Distance(hit.position, player.position);
             if (distanceToPlayer < minDistanceFromPlayer || distanceToPlayer > maxDistanceFromPlayer)
                 continue;
