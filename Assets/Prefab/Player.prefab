@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 3917349967384431924}
   - component: {fileID: 6119966653276565025}
   - component: {fileID: 6522288661828770674}
+  - component: {fileID: 459765111711085255}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -750,7 +751,6 @@ MonoBehaviour:
   interactionSystem: {fileID: 2294795918840759755}
   crosshairImage: {fileID: 0}
   inventory: {fileID: 2107256297289543023}
-  uiCamera: {fileID: 0}
   projectionDistance: 10
   defaultSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   pickupSprite: {fileID: 21300000, guid: 70c4e1984afb4e741933e638987102fd, type: 3}
@@ -758,6 +758,7 @@ MonoBehaviour:
   useSprite: {fileID: 21300000, guid: 9894fb297b4412d4f871f8b4044449dd, type: 3}
   hideSprite: {fileID: 21300000, guid: 7932b13edb0db934a8b70c57e6319d26, type: 3}
   exitSprite: {fileID: 21300000, guid: 13cd3183739e46b4fbdaf9aae8acc81e, type: 3}
+  fireSprite: {fileID: 21300000, guid: 910260cbcd740dd4a96fbb6766ca1bef, type: 3}
   enlargedSize: {x: 50, y: 50}
 --- !u!114 &8744966283014305671
 MonoBehaviour:
@@ -1099,6 +1100,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &459765111711085255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566639883959206767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690a911662a142047ab64540b6586b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerOxygen
+  fireSpread: {fileID: 0}
+  fearMeter: {fileID: 397285112041963625}
+  burningPointsToStart: 3
+  duration: 60
 --- !u!1 &7660666125510298289
 GameObject:
   m_ObjectHideFlags: 0
