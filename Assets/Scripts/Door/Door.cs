@@ -17,7 +17,6 @@ public class Door : MonoBehaviour, IInteractable
 
     private bool isOpen;
 
-    public string InteractionPrompt => "Drzwi";
     public InteractionType Type => InteractionType.Door;
 
     private void Awake()

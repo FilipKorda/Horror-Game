@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8569801bd462a494eba3bd771b5f12a8, type: 3}
+  m_Name: InputIconSet_Generic
+  m_EditorClassIdentifier: Assembly-CSharp::InputIconSet
+  deviceType: 3
+  icons:
+  - bindingPath: <Keyboard>/w
+    spriteTagName: keyboard_w
+  - bindingPath: <Keyboard>/a
+    spriteTagName: keyboard_a
+  - bindingPath: <Keyboard>/s
+    spriteTagName: keyboard_s
+  - bindingPath: <Keyboard>/d
+    spriteTagName: keyboard_d
+  - bindingPath: <Pointer>/delta
+    spriteTagName: mouse_move
+  - bindingPath: <Mouse>/leftButton
+    spriteTagName: mouse_left
+  - bindingPath: <Keyboard>/ctrl
+    spriteTagName: keyboard_ctrl
+  - bindingPath: <Keyboard>/leftShift
+    spriteTagName: keyboard_shift
+  - bindingPath: <Keyboard>/f
+    spriteTagName: keyboard_f
+  - bindingPath: <Keyboard>/x
+    spriteTagName: keyboard_x
+  - bindingPath: <Keyboard>/e
+    spriteTagName: keyboard_e
+  - bindingPath: <Keyboard>/escape
+    spriteTagName: keyboard_escape
+  - bindingPath: <Keyboard>/q
+    spriteTagName: keyboard_q
+  - bindingPath: <Keyboard>/r
+    spriteTagName: keyboard_r

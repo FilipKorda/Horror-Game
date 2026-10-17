@@ -22,6 +22,7 @@ public class FireSpread : MonoBehaviour
     private Coroutine spreadRoutine;
 
     public bool IsSpreading => spreadRoutine != null;
+    public int IgnitedCount { get; private set; }
 
     private void Awake()
     {
@@ -80,6 +81,7 @@ public class FireSpread : MonoBehaviour
         FireEffect fire = Instantiate(prefab, point.transform.position, point.transform.rotation, point.transform);
         point.Fire = fire;
         fire.Ignite(point.Scale);
+        IgnitedCount++;
     }
 
     private FireEffect GetPrefab(FireSpreadPoint.FireSize size)

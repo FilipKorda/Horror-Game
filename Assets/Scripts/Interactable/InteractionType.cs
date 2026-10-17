@@ -1,9 +1,11 @@
 
 public enum InteractionType
 {
-    Pickup, 
-    Door,   
-    Use,   
-    Hide, 
-    Exit
+    Pickup,
+    Door,
+    Use,
+    Hide,
+    Exit,
+
+    Fire
 }

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8569801bd462a494eba3bd771b5f12a8, type: 3}
+  m_Name: InputIconSet_Xbox
+  m_EditorClassIdentifier: Assembly-CSharp::InputIconSet
+  deviceType: 1
+  icons:
+  - bindingPath: <Gamepad>/rightStick
+    spriteTagName: xbox_stick_r
+  - bindingPath: <Gamepad>/buttonSouth
+    spriteTagName: xbox_button_color_a
+  - bindingPath: <Gamepad>/rightShoulder
+    spriteTagName: xbox_rb
+  - bindingPath: <Gamepad>/rightTrigger
+    spriteTagName: xbox_rt
+  - bindingPath: <Gamepad>/buttonEast
+    spriteTagName: xbox_button_color_b
+  - bindingPath: <Gamepad>/dpad/up
+    spriteTagName: xbox_dpad_round_up
+  - bindingPath: <Gamepad>/dpad/down
+    spriteTagName: xbox_dpad_round_down
+  - bindingPath: <Gamepad>/buttonWest
+    spriteTagName: xbox_button_color_x
+  - bindingPath: <Gamepad>/buttonNorth
+    spriteTagName: xbox_button_color_y
+  - bindingPath: <Gamepad>/rightStick/up
+    spriteTagName: xbox_stick_r_up
+  - bindingPath: <Gamepad>/rightStick/left
+    spriteTagName: xbox_stick_r_left
+  - bindingPath: <Gamepad>/rightStick/down
+    spriteTagName: xbox_stick_r_down
+  - bindingPath: <Gamepad>/rightStick/right
+    spriteTagName: xbox_stick_r_right
+  - bindingPath: <Gamepad>/start
+    spriteTagName: xbox_button_menu

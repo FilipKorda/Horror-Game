@@ -1,7 +1,6 @@
 
 public interface IInteractable
 {
-    string InteractionPrompt { get; }
 
     InteractionType Type { get; }
 

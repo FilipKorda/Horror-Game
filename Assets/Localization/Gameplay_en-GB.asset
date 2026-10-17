@@ -111,6 +111,24 @@ MonoBehaviour:
     m_Localized: Fear level
     m_Metadata:
       m_Items: []
+  - m_Id: 11562219750064128
+    m_Localized: The smoke took your last breath.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11562219817172992
+    m_Localized: 'You set the vampire''s belongings on fire, and the flames swallowed
+      the whole house. You searched for a way out through the thick smoke, but every
+      breath burned more than the last.
+
+
+      The fire that was meant to free you
+      locked you inside. You never reached the door.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11562219817172993
+    m_Localized: Fires burning
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -111,6 +111,22 @@ MonoBehaviour:
     m_Localized: Poziom strachu
     m_Metadata:
       m_Items: []
+  - m_Id: 11562219750064128
+    m_Localized: "Dym odebra\u0142 ci ostatni oddech."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11562219817172992
+    m_Localized: "Podpali\u0142e\u015B rzeczy wampira, a p\u0142omienie poch\u0142on\u0119\u0142y
+      ca\u0142y dom. Szuka\u0142e\u015B wyj\u015Bcia w g\u0119stym dymie, ale ka\u017Cdy
+      oddech pali\u0142 bardziej od poprzedniego.\n\nOgie\u0144, kt\xF3ry mia\u0142
+      ci\u0119 uwolni\u0107, zamkn\u0105\u0142 ci\u0119 w \u015Brodku. Nie zd\u0105\u017Cy\u0142e\u015B
+      dobiec do drzwi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11562219817172993
+    m_Localized: "P\u0142on\u0105ce ogniska"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

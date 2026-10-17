@@ -17,12 +17,15 @@ public class PlayerFearMeter : MonoBehaviour
     [SerializeField] private PauseController pauseController;
     [SerializeField] private PlayerHider playerHider;
     [SerializeField] private GameObject dieResultPanel;
+    [SerializeField] private GameObject suffocationResultPanel;
     [SerializeField] private FPSController playerController;
     [SerializeField] private CharacterController characterController;
     private bool isDead;
     private bool deathSequenceStarted;
+    private bool suffocated;
     private bool heartbeatActive;
 
+    public bool IsDead => isDead || deathSequenceStarted;
     public int MaxFearPoints => maxFearPoints;
     public int CurrentFearPoints => currentFearPoints;
     public float FearPercent01 => maxFearPoints > 0 ? (float)currentFearPoints / maxFearPoints : 0f;
@@ -188,6 +191,26 @@ public class PlayerFearMeter : MonoBehaviour
         vignette.smoothness.value = 1f;
     }
 
+    public void DieFromSuffocation()
+    {
+        if (isDead || deathSequenceStarted)
+            return;
+
+        deathSequenceStarted = true;
+        suffocated = true;
+
+        if (promptPanel != null)
+            promptPanel.SetActive(false);
+
+        foreach (WardrobeController wardrobe in FindObjectsByType<WardrobeController>(FindObjectsSortMode.None))
+        {
+            if (wardrobe.IsOccupied || wardrobe.IsTransitioningWithPlayer)
+                wardrobe.EjectPlayer();
+        }
+
+        Die();
+    }
+
     private IEnumerator DieDealy()
     {
         yield return new WaitForSeconds(5f);
@@ -250,8 +273,10 @@ public class PlayerFearMeter : MonoBehaviour
 
         pauseController.CanPause = false;
 
-        if (dieResultPanel != null)
-            dieResultPanel.SetActive(true);
+        GameObject resultPanel = suffocated && suffocationResultPanel != null ? suffocationResultPanel : dieResultPanel;
+
+        if (resultPanel != null)
+            resultPanel.SetActive(true);
     }
 
 }

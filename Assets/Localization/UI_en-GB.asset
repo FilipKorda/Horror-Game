@@ -295,6 +295,10 @@ MonoBehaviour:
     m_Localized: Field of view
     m_Metadata:
       m_Items: []
+  - m_Id: 11664053697282048
+    m_Localized: You Suffocated!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

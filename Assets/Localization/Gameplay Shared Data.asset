@@ -99,6 +99,18 @@ MonoBehaviour:
     m_Key: StatFearLevel
     m_Metadata:
       m_Items: []
+  - m_Id: 11562219750064128
+    m_Key: SuffocationTagline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11562219817172992
+    m_Key: SuffocationResultDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11562219817172993
+    m_Key: StatFiresBurning
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

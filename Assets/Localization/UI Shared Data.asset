@@ -283,6 +283,10 @@ MonoBehaviour:
     m_Key: FieldOfView
     m_Metadata:
       m_Items: []
+  - m_Id: 11664053697282048
+    m_Key: YouSuffocated
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

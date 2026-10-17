@@ -6,7 +6,6 @@ public class FlashlightBatteryPickup : MonoBehaviour, IInteractable
     [Header("Pickup")]
     [SerializeField] private bool destroyOnPickup = true;
 
-    public string InteractionPrompt => "Podnieś baterię";
     public InteractionType Type => InteractionType.Pickup;
 
     public bool Interact(GameObject interactor)

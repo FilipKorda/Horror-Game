@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8569801bd462a494eba3bd771b5f12a8, type: 3}
+  m_Name: InputIconSet_PS
+  m_EditorClassIdentifier: Assembly-CSharp::InputIconSet
+  deviceType: 2
+  icons:
+  - bindingPath: <Gamepad>/rightStick
+    spriteTagName: playstation_stick_r
+  - bindingPath: <Gamepad>/buttonSouth
+    spriteTagName: playstation_button_color_cross
+  - bindingPath: <Gamepad>/rightShoulder
+    spriteTagName: playstation_trigger_r1
+  - bindingPath: <Gamepad>/rightTrigger
+    spriteTagName: playstation_trigger_r1_alternative
+  - bindingPath: <Gamepad>/buttonEast
+    spriteTagName: playstation_button_color_circle
+  - bindingPath: <Gamepad>/dpad/up
+    spriteTagName: playstation_dpad_up
+  - bindingPath: <Gamepad>/dpad/down
+    spriteTagName: playstation_dpad_down
+  - bindingPath: <Gamepad>/buttonWest
+    spriteTagName: playstation_button_color_square
+  - bindingPath: <Gamepad>/buttonNorth
+    spriteTagName: playstation_button_color_triangle
+  - bindingPath: <Gamepad>/rightStick/up
+    spriteTagName: playstation_stick_r_up
+  - bindingPath: <Gamepad>/rightStick/left
+    spriteTagName: playstation_stick_r_left
+  - bindingPath: <Gamepad>/rightStick/down
+    spriteTagName: playstation_stick_r_down
+  - bindingPath: <Gamepad>/rightStick/right
+    spriteTagName: playstation_stick_r_right
+  - bindingPath: <Gamepad>/start
+    spriteTagName: playstation4_button_options

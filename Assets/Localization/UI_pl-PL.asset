@@ -296,6 +296,10 @@ MonoBehaviour:
     m_Localized: Pole widzenia
     m_Metadata:
       m_Items: []
+  - m_Id: 11664053697282048
+    m_Localized: "Udusi\u0142e\u015B si\u0119!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

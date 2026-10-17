@@ -148,6 +148,10 @@ public abstract class ResultPanel : MonoBehaviour
         foreach (FireEffect fire in FindObjectsByType<FireEffect>(FindObjectsSortMode.None))
             fire.SilenceAudio();
 
+        PlayerOxygen oxygen = FindFirstObjectByType<PlayerOxygen>();
+        if (oxygen != null)
+            oxygen.Stop();
+
         InteractionSystem interaction = FindFirstObjectByType<InteractionSystem>();
         if (interaction != null)
             interaction.enabled = false;
