@@ -111,6 +111,62 @@ MonoBehaviour:
     m_Key: StatFiresBurning
     m_Metadata:
       m_Items: []
+  - m_Id: 11579553562787840
+    m_Key: QuestHeader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285312
+    m_Key: Quest1Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285313
+    m_Key: Quest2Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285314
+    m_Key: Quest3Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285315
+    m_Key: QuestOnPedestal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285316
+    m_Key: QuestCarrying
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285317
+    m_Key: QuestHintCarry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285318
+    m_Key: QuestHintSearch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285319
+    m_Key: QuestHintGoUp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285320
+    m_Key: QuestHintFindLighter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285321
+    m_Key: QuestHintFindFuel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285322
+    m_Key: QuestHintBurn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285323
+    m_Key: QuestHintEscape
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285324
+    m_Key: QuestHintNoOxygen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

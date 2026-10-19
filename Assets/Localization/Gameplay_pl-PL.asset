@@ -127,6 +127,62 @@ MonoBehaviour:
     m_Localized: "P\u0142on\u0105ce ogniska"
     m_Metadata:
       m_Items: []
+  - m_Id: 11579553562787840
+    m_Localized: ZADANIE {0}/{1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285312
+    m_Localized: "Z\u0142\xF3\u017C str\xF3j wampira na piedestale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285313
+    m_Localized: "Przygotuj ogie\u0144"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285314
+    m_Localized: "Uciekaj z p\u0142on\u0105cego domu!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285315
+    m_Localized: 'Na piedestale: {0}/{1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285316
+    m_Localized: 'przy sobie: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285317
+    m_Localized: "Niesiesz {0}. Zanie\u015B na piedesta\u0142."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285318
+    m_Localized: "Szukaj reszty na tym pi\u0119trze (zosta\u0142o: {0})."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285319
+    m_Localized: "Brama jest otwarta. Wejd\u017A na pi\u0119tro wy\u017Cej."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285320
+    m_Localized: "Znajd\u017A zapalniczk\u0119."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285321
+    m_Localized: "Znajd\u017A wi\u0119cej benzyny (zosta\u0142o: {0})."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285322
+    m_Localized: "Masz wszystko! Wr\xF3\u0107 i podpal piedesta\u0142."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285323
+    m_Localized: "Znajd\u017A wyj\u015Bcie z domu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285324
+    m_Localized: Dym! Uciekaj, zanim zabraknie ci tchu!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

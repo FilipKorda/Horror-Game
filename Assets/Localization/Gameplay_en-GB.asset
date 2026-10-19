@@ -129,6 +129,62 @@ MonoBehaviour:
     m_Localized: Fires burning
     m_Metadata:
       m_Items: []
+  - m_Id: 11579553562787840
+    m_Localized: QUEST {0}/{1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285312
+    m_Localized: Place the vampire's attire on the pedestal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285313
+    m_Localized: Prepare the fire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285314
+    m_Localized: Escape the burning house!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285315
+    m_Localized: 'On pedestal: {0}/{1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285316
+    m_Localized: 'carrying: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285317
+    m_Localized: You carry {0}. Take it to the pedestal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285318
+    m_Localized: Search this floor for the rest ({0} left).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285319
+    m_Localized: The gate is open. Go up to the next floor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285320
+    m_Localized: Find the lighter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285321
+    m_Localized: Find more lighter fluid ({0} left).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285322
+    m_Localized: You have everything! Go back and burn the pedestal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285323
+    m_Localized: Find the way out of the house.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11579553638285324
+    m_Localized: Smoke! Get out before you run out of air!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

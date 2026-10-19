@@ -36,6 +36,7 @@ public class ItemInventory : MonoBehaviour
 
         items[item] -= amount;
 
+        OnInventoryChanged?.Invoke();
         return true;
     }
 }
