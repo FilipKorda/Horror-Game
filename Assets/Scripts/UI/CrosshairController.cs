@@ -12,9 +12,6 @@ public class CrosshairController : MonoBehaviour
     [SerializeField] private Image crosshairImage;
     [SerializeField] private ItemInventory inventory;
 
-    [Header("Canvas")]
-    [SerializeField] private Camera uiCamera; 
-
     [Header("Zasięg rzutowania")]
     [SerializeField] private float projectionDistance = 10f;
 
@@ -25,6 +22,7 @@ public class CrosshairController : MonoBehaviour
     [SerializeField] private Sprite useSprite;
     [SerializeField] private Sprite hideSprite;
     [SerializeField] private Sprite exitSprite;
+    [SerializeField] private Sprite fireSprite;
 
     [Header("Rozmiar")]
     [SerializeField] private Vector2 enlargedSize = new Vector2(50f, 50f); 
@@ -52,9 +50,9 @@ public class CrosshairController : MonoBehaviour
         Vector3 screenPoint = playerCamera.WorldToScreenPoint(worldPoint);
 
         if (screenPoint.z <= 0f)
-            return; 
+            return;
 
-        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPoint, uiCamera, out Vector2 localPoint))
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPoint, null, out Vector2 localPoint))
             crosshairRect.anchoredPosition = localPoint;
     }
 
@@ -80,6 +78,7 @@ public class CrosshairController : MonoBehaviour
                     : useSprite,
                 InteractionType.Hide => hideSprite,
                 InteractionType.Exit => exitSprite,
+                InteractionType.Fire => fireSprite,
                 _ => defaultSprite,
             };
         }

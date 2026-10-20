@@ -27,7 +27,6 @@ public class WardrobeController : MonoBehaviour, IInteractable, IHideable
 
     private enum DoorState { Closed, Ajar, Open }
 
-    public string InteractionPrompt => "Wejdź do szafy";
     public InteractionType Type => InteractionType.Hide;
     [SerializeField] private AudioClip doorCloseOpenClip;
     [SerializeField] private float ejectDoorDuration = 0.12f;
